@@ -1,7 +1,7 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
-<title>9Axes Quiz</title>
+<title>Quiz - 9Axes</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
@@ -12,15 +12,15 @@
 </script>
 <h1>9Axes</h1>
 <hr>
-<h2 style="text-align:center;" id="question-number">Loading...</h2>
+<h2 style="text-align:center;" id="question-number">A carregar...</h2>
 <p class="question" id="question-text"></p>
-<button class="button" onclick="next_question( 2)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
-<button class="button" onclick="next_question( 1)" style="background-color: #4caf50;">Agree</button> <br>
-<button class="button" onclick="next_question( 0)" style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
-<button class="button" onclick="next_question(-1)" style="background-color: #f44336;">Disagree</button> <br>
-<button class="button" onclick="next_question(-2)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
-<button class="small_button" onclick="prev_question()" id="back_button">Back</button>
-<button class="small_button_off" id="back_button_off">Back</button><br>
+<button class="button" onclick="next_question( 2)" style="background-color: #1b5e20;">Concordo Fortemente</button> <br>
+<button class="button" onclick="next_question( 1)" style="background-color: #4caf50;">Concordo</button> <br>
+<button class="button" onclick="next_question( 0)" style="background-color: #bbbbbb;">Neutro/Incerto</button> <br>
+<button class="button" onclick="next_question(-1)" style="background-color: #f44336;">Discordo</button> <br>
+<button class="button" onclick="next_question(-2)" style="background-color: #b71c1c;">Discordo Fortemente</button> <br>
+<button class="small_button" onclick="prev_question()" id="back_button">Voltar</button>
+<button class="small_button_off" id="back_button_off">Voltar</button><br>
 
 
 <script>
@@ -52,7 +52,7 @@
         var rate = quests[qn][1];
         var num = quests[qn][2];
         document.getElementById("question-text").innerHTML = questions[ax][rate][num];
-        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (quests.length);
+        document.getElementById("question-number").innerHTML = "Questão " + (qn + 1) + " de " + (quests.length);
         if (qn == 0) {
             document.getElementById("back_button").style.display = 'none';
             document.getElementById("back_button_off").style.display = 'block';
