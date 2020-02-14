@@ -5,9 +5,10 @@
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
-</head>
 <script type="application/javascript">
+    version = "Versão #1" //Remember to update this before making changes to the test itself!
 </script>
+</head>
 
 <body>
 <h1>9Axes</h1>
@@ -294,7 +295,8 @@
         if (i2  > 20) {ctx.fillText(i2 + "%", 670, 1147.5)}
 
         ctx.font="300 30px Montserrat"
-        ctx.fillText("9Axes.github.io", 780, 55)
+        ctx.fillText("9axes.nadaradical.com", 780, 55)
+		ctx.fillText(version, 780, 85)
         ctx.textAlign="center"
         ctx.fillText(document.getElementById("a-label").innerHTML, 400, 125)
         ctx.fillText(document.getElementById("b-label").innerHTML, 400, 245)
