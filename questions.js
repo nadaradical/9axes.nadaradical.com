@@ -1,18 +1,18 @@
 questions = 
     [[//Descentralização-Centralização`
         [//4
-            "There is no need for a national government",
-            "Subdivisions of nations should have their own militaries",
+            "Não há necessidade de um Governo central.",
+            "As subdivisões das nações devem ter seus próprios militares.",
             "State laws should have precedence over national laws"
         ],
         [//3
             "State and local laws should have precedence over national laws",
-            "The national government can't understand what the people need.",
+            "O Governo central não consegue entender o que as pessoas precisam.",
             "People should hold more loyalty to their local state than their country."
         ],
         [//2
             "Local governments should have more power than they currently do",
-            "Laws should vary from area to area and culture to culture within a country.",
+            "As leis devem variar de área para área e de cultura para cultura dentro de um país.",
             "It's a good idea to test a policy in one state rather than implementing it nationwide right away"
             
         ],
@@ -22,14 +22,14 @@ questions =
             "Local governments give each region good representation of their views"
         ],
         [//-1
-            "A country cannot function without a national government",
+            "Um país não pode funcionar sem um Governo central.",
             "The national government protects minorities better than some local governments do.",
             "There are many issues that it does not make sense to address at a local level"
         ],
         [//-2
-            "The national government needs more power",
-            "Subdivisions should not be able to exempt from national laws",
-            "People should think of themselves as citizens of their nation rather than their state"
+            "O Governo central precisa de mais poder.",
+            "As subdivisões não devem se poder isentar das leis nacionais.",
+            "As pessoas devem pensar em si mesmas como cidadãos de sua Nação, e não do seu Estado."
         ],
         [//-3
             "A group of states without a strong national government is merely an alliance, not a nation",
@@ -37,117 +37,117 @@ questions =
             "States cannot function without a strong national government"
         ],
         [//-4
-            "There is no need for local or state governments",
-            "Laws should be completely consistent within all regions of a nation",
-            "Strong states weaken a nation"
+            "Não há necessidade de governos locais ou centrais.",
+            "As leis devem ser completamente consistentes em todas as regiões de uma Nação.",
+            "Estados fortes enfraquecem uma Nação."
         ]],[//Democratico-Autoritário`
         [//4
-            "Direct democracy is the best form of government",
+            "Democracia direta é a melhor forma de governo.",
             "People should vote issue by issue themselves",
-            "Representatives rarely represent the nation well"
+            "Os representantes raramente representam bem a Nação."
         ],
         [//3
-            "It is important that the government follows the majority opinion, even if it is wrong.",
-            "The more people asked, the better chance there is of reaching the best decision.",
-            "Nobody but me can adequately represent my views"
+            "É imporatante que o governo siga a opinião da maioria, ainda que ela possa estar errada.",
+            "Quanto a mais pessoas perguntarem, maior é a chance de chegar à melhor decisão.",
+            "Ninguém para além de mim pode representar adequadamente os meus pontos de vista."
         ],
         [//2
-            "Elections are an effective way of showing government approval",
-            "Democracy is the worst form of government, except for all the others we've tried.",
-            "Each person should have one vote, each equal to every other"
+            "As eleições são uma maneira eficaz de mostrar a aprovação do governo.",
+            "A democracia é a pior forma de governo, exceto todas as outras que tentamos.",
+            "Cada pessoa deve ter um voto, cada um igual ao outro."
         ],
         [//1
-            "Democracy is more than a decision-making process.",
-            "People should have the power to choose their leaders",
-            "The government must be by the people for the people"
+            "A democracia é mais do que um mero processo de tomada de decisões.",
+            "As pessoas devem ter o poder de escolher seus líderes,",
+            "O governo deve ser do povo para o povo."
         ],
         [//-1
-            "The stronger the leadership, the better.",
-            "Popular opinion is not always right",
-            "Leaders must be strong or a nation will suffer"
+            "Quanto mais forte for nosso líder, melhor para a Nação.",
+            "A opinião popular nem sempre está certa.",
+            "Os líderes devem ser fortes ou a Nação sofrerá."
         ],
         [//-2
-             "A hierarchical state is best.",
-            "Society could not function without leaders and followers",
-             "Democracy makes it too easy for a majority to further itself at the expense of minorities"
+             "Um Estado rigidamente hierárquico é o melhor caminho para a manutenção da ordem.",
+             "A sociedade não poderia funcionar sem líderes e seguidores.",
+             "A democracia torna muito fácil para a maioria se promover às custas das minorias."
         ],
         [//-3
-            "The general populace makes poor decisions.",
-             "It is important that we further my group's goals above all others.",
-            "Public opinion swings too much with emotional events to be useful for policy making"
+            "A população em geral faz decisões péssimas.",
+            "É importante que coloquemos os interesses do nosso grupo ideológico acima de todos os demais.",
+            "A opinião pública oscila demais com eventos emocionais para ser útil na formulação de políticas."
         ],
         [//-4
-            "Elections are a waste of resources",
+            "As eleições são um desperdício de recursos.",
             "Catering to popular opinion is detrimental to a nation",
-            "A nation must obey its leadership without question"
+            "Uma Nação deve obedecer à sua liderança sem a questionar."
         ]],[//Globalista-Isolacionista`
         [//4
-            "A united world government would be beneficial to mankind.",
-            "We are first and foremost citizens of Earth",
-            "In order for humanity to survive, we must get past having separate nations"
+            "Um governo mundial unido seria algo benéfico para a humanidade.",
+            "Somos, antes de mais, cidadãos da Terra.",
+            "Para que a humanidade sobreviva, precisamos deixar de ter nações separadas."
         ],
         [//3
-            "The United Nations needs more power",
-            "The United Nations should have a military to enforce its resolutions",
-            "Having independent nations with the risk of global conflict creates a large threat to humanity as a whole"
+            "A ONU (Organização das Nações Unidas) precisam de mais poder.",
+            "A ONU (Organização das Nações Unidas) devia ter um exército para fazer cumprir as .suas resoluções",
+            "Ter nações independentes com o risco de conflito global cria uma grande ameaça para a humanidade como um todo."
         ],
         [//2
-            "I support regional unions, such as the European Union.",
-            "Governments should be accountable to the international community.",
-            "Nations fighting among each other gets in the way of progress"
+            "Eu apoio ligas regionais de países, como a União Europeia.",
+            "Governos deveriam ser responsáveis pela comunidade internacional.",
+            "Nações que lutam entre si atrapalham o caminho para o progresso."
         ],
         [//1
-            "International trade is generally beneficial.",
-            "Alliances are important for protecting a nation",
-            "Nations should cooperate whenever it benefits them both"
+            "O comércio internacional é benéfico.",
+            "Alianças são importantes para proteger uma Nação.",
+            "As Nações devem cooperar sempre que isso beneficia ambas."
         ],
         [//-1
-            "It is important to maintain our national sovereignty.",
-            "My nation is closer to my views than most nations in the world",
-            "I am proud to be in my country"
+            "É muito importante manter a nossa soberania nacional.",
+            "Minha nação está mais próxima das minhas ideologias do que a maioria das Nações do mundo.",
+            "Tenho orgulho de estar no meu país."
         ],
         [//-2
-            "International aid is a waste of money.",
-            "Alliances can pose a threat to a nation's sovereignty.",
-            "National cultures are important to protect"
+            "O apoio financeiro aos países necessitados é um desperdício de dinheiro.",
+            "Alianças podem representar uma ameaça à soberania de uma Nação.",
+            "É importante proteger a cultura nacional."
         ],
         [//-3
-            "My nation should stay out of international affairs",
-            "The United Nations should be abolished.",
-            "Nobody in other countries has our best interests in mind"
+            "Minha nação deve ficar de fora dos assuntos internacionais.",
+            "A ONU (Organização das Nações Unidas) deve ser abolida.",
+            "Ninguém em outros países tem os nossos melhores interesses em mente."
         ],
         [//-4
             "Diplomacy only hurts nations",
-            "There should not be international law",
-            "Any deals other countries want must be bad for us"
+            "Não deveria haver leis internacionais.",
+            "Quaisquer acordos que outros países desejem devem ser péssimos para nós."
         ]],[//Militarista-Pacifista`
         [//4
-            "War is needed to make an economy thrive",
-            "A constant state of war benefits a country",
-            "Only those who serve in the military should be allowed to have influence on who is in power"
+            "A guerra é necessária para fazer a economia prosperar.",
+            "Um estado constante de guerra beneficia um país.",
+            "Apenas aqueles que servem nas forças armadas devem ter influência sobre quem está no poder."
         ],
         [//3
-            "There should be compulsory military service",
-            "Countries that do not serve our interests should be toppled",
-            "Only those who served in the military should be able to gain power in government"
+            "Devia haver serviço militar obrigatório.",
+            "Os países que não correspondem aos nossos interesses devem ser derrubados.",
+            "Apenas aqueles que serviram nas forças armadas devem capazes de ganhar poder no governo."
         ],
         [//2
-            "Military action by our nation is often necessary to protect it.",
-            "Countries that violate human rights should be toppled",
-            "A military option should always be considered"
+            "A ação militar preventiva por parte de nossa Nação é por vezes necessária para protegê-la.",
+            "Os países que não respeitam os direitos humanos devem ser derrubados.",
+            "Uma opção militar deve sempre ser considerada."
         ],
         [//1
-            "A government must maintain a strong military to defend itself",
+            "Um governo deve manter um exército forte para se defender.",
             "A nation usually needs a military in order to survive",
             "We should respect those who have served in our military"
         ],
         [//-1
-            "It is more important to retain peaceful relations than to further our strength.",
+            "É mais importante manter relações pacíficas com os demais países do que aumentar a nossa força militar.",
             "Diplomatic options should always be tried before war is even considered",
             "Peace is preferable to war whenever possible"
         ],
         [//-2
-            "Even when protesting an authoritarian government, violence is not acceptable.",
+            "Mesmo ao protestar contra um governo autoritário, a violência não é aceitável.",
             "Lasting peace leads to prosperity",
             "War usually leads to worse outcomes"
         ],
@@ -168,13 +168,13 @@ questions =
         ],
         [//3
             "Police need more power and protection",
-            "It is very important to maintain law and order.",
+            "É muito importante a manutenção da lei e da ordem.",
             "A country must be sure to take all measures to enforce its laws"
         ],
         [//2
             "If you have nothing to hide, then you shouldn't care about the government having access to your communications",
-            "The sacrifice of some civil liberties is necessary to protect us from acts of terrorism.",
-            "Government surveillance is necessary in the modern world."
+            "O sacrifício de algumas liberdades civis é necessário para nos proteger dos atos de terrorismo.",
+            "A vigilância governamental é necessária no mundo moderno."
         ],
         [//1
             "The government should have access to the emails of suspected terrorists",
@@ -187,43 +187,43 @@ questions =
             "The government has no business looking into most people's personal lives"
         ],
         [//-2
-            "Abortion should be legal in all cases",
+            "O aborto deve ser legal em todos os casos",
             "Police should be regulated more",
-            "No authority should be left unquestioned."
+            "Toda a autoridade deve ser questionada."
         ],
         [//-3
-            "Victimless crimes (such as drug use) should not be crimes at all.",
-            "Most drugs should be legalized",
+            "Crimes sem vítimas (como o uso de drogas) não deveriam ser responsabilidade policial.",
+            "A legalização do uso pessoal de drogas leves é bem-vinda",
             "Whistleblowers should be strongly protected"
         ],
         [//-4
-            "The very existence of the state is a threat to our liberty.",
+            "A prória existência do Estado é uma ameaça à nossa liberdade.",
             "There should be no police force",
             "People's freedom should have no limits"
         ]],[//Intervencionismo-Livre_Mercado`
         [//4
             "Communism, if implemented correctly, would be a good form of economics",
-            "From each according to his ability, to each according to his need",
+            "De cada qual segundo sua capacidade; a cada qual segundo suas necessidades.",
             "Equality of outcome is important"
         ],
         [//3
-            "Oppression by corporations is more of a concern than oppression by governments.",
-            "Taxes should be increased on the rich to provide for the poor.",
-            "Public utilities like roads and electricity should be publicly owned."
+            "A opressão por parte das corporações é um problema mais grave do que a opressão por parte dos governos.",
+            "Portugal deve aumentar os impostos sobre os ricos para fornecer para os pobres.",
+            "Áreas e serviços de utilidade pública, como estradas e eletricidade, deveriam ser propriedade do Estado."
         ],
         [//2
-            "I support single-payer, universal healthcare.",
+            "Eu apoio um sistema único e universal de saúde.",
             "The wealthy have far more than they need",
             "Basic things needed to live, such as healthcare, are rights"
         ],
         [//1
-            "It is necessary for the government to intervene in the economy to protect consumers.",
+            "É necessário que o governo intervenha na economia para proteger os consumidores.",
             "People should have equal opportunity to succeed",
             "People born to wealthy families have unfair success even when they aren't skilled and don't work hard"
         ],
         [//-1
             "People should have the right to leave their wealth to their descendents",
-            "Excessive government intervention is a threat to the economy.",
+            "Uma intervenção excessiva do Estado no Mercado é um risco à economia.",
             "Economies without any capitalism will collapse"
         ],
         [//-2
@@ -232,13 +232,13 @@ questions =
             "Government owned industry is usually a bad idea"
         ],
         [//-3
-            "The freer the market, the freer the people",
+            "Quanto mais livre é o mercado, mais livres são as pessoas.",
             "People should have to work for anything they get",
             "The poor choose to be poor"
         ],
         [//-4
             "The government should not regulate the economy at all",
-            "The government should not break up monopolies",
+            "O verdadeiro livre mercado deve permitir que as multinacionais predadoras criem monopólios.",
             "Those who do not work should die"
         ]],[//Secular-Religioso`
         [//4
@@ -269,12 +269,12 @@ questions =
         [//-2
             "I believe in a higher power",
             "Religious organizations often provide better assistance to the poor than the government does",
-            "Children should be educated in religious values."
+            "É importante que a escola de meu filho incuta valores religiosos."
         ],
         [//-3
             "Religion usually provides the truth",
-            "My religious values should be spread as much as possible.",
-            "Sex outside marriage is immoral."
+            "Meus valores religiosos precisam ser disseminados tanto quanto for possível.",
+            "Sexo fora do casamento é imoral."
         ],
         [//-4
             "Theocracy is a good system of government",
@@ -293,14 +293,14 @@ questions =
         ],
         [//2
             "We should put effort into getting a person on Mars in the near future",
-            "Testing products on animals is ethical",
+            "Usar animais para testar a segurança de drogas, vacinas, dispositivos médicos e cosméticos é ético.",
             "Technological progress is usually good"
             
         ],
         [//1
             "Human Caused climate change is currently one of the greatest threats to our way of life.",
-            "Environmental regulations are essential.",
-            "A better world will come from automation, science, and technology."
+            "Regulações ambientais são essenciais para assegurar o futuro de nossos filhos e netos.",
+            "Um mundo melhor surgirá do avanço da automação, da ciência e da tecnologia."
         ],
         [//-1
             "To chase progress at all costs is dangerous.",
@@ -313,7 +313,7 @@ questions =
             "Maintaining family values is essential."
         ],
         [//-3
-            "Society was better many years ago than it is now.",
+            "Nossa sociedade era melhor e mais segura há décadas atrás.",
             "It is important that we maintain the traditions of our past.",
             "The elders in society know the best path for it"
         ],
