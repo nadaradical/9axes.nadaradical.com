@@ -323,9 +323,9 @@ questions =
             "We must go back to a basic way of life without modern conveniences."
         ]],[//Assimilacionista-Multiculturalista`
         [//4
-            "Foreigners should never enter the country",
-            "We should not allow any refugees",
-            "Only our national language(s) should be spoken in our country"
+            "Os estrangeiros nunca devem entrar no meu país.",
+            "Não devemos permitir refugiados.",
+            "Apenas as nossas línguas nacionais devem ser faladas no nosso país."
         ],
         [//3
             "Only extremely talented immigrants, if that, should be permitted to enter the country",
