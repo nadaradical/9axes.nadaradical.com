@@ -3,7 +3,7 @@ questions =
         [//4
             "Não há necessidade de um Governo central.",
             "As subdivisões das nações devem ter seus próprios militares.",
-            "State laws should have precedence over national laws"
+            "As leis das autárquicas devem ter precedência sobre as leis nacionais"
         ],
         [//3
             "State and local laws should have precedence over national laws",
@@ -329,37 +329,37 @@ questions =
         ],
         [//3
             "Only extremely talented immigrants, if that, should be permitted to enter the country",
-            "If we accept migrants at all, it is important that they assimilate into our culture.",
-            "Immigrants can never really adapt to our way of life"
+            "Se aceitarmos os migrantes de todo, é importante que eles se integrem à nossa cultura.",
+            "Os imigrantes nunca irão realmente se adaptar ao nosso modo de vida."
         ],
         [//2
-            "In general, immigrants are bad for the country",
-            "A nation's culture is important to protect",
-            "Illegal Immigrants have no benefits"
+            "Em geral, os imigrantes são péssimos para o país.",
+            "É importante proteger a cultura de uma nação.",
+            "Imigrantes ilegais não têm benefícios."
         ],
         [//1
-            "Illegal immigrants should be deported in most or all cases",
-            "Immigrants should be expected to learn the language of the country",
-            "Border protection is important"
+            "Imigrantes ilegais devem ser deportados na maioria ou em todos os casos.",
+            "É de esperar que os imigrantes aprendem o idioma do país de acolhimento.",
+            "A proteção de fronteiras é importante."
         ],
         [//-1
-            "We should be taking in more refugees",
-            "Immigrants are a net positive",
-            "I enjoy some foreign cultures"
+            "Deveríamos receber mais refugiados.",
+            "Os imigrantes são um líquido positivo.",
+            "Eu gosto de algumas culturas estrangeiras."
         ],
         [//-2
-            "No cultures are superior to others.",
-            "We should be more accepting to other cultures",
-            "All societies are a blend of cultures"
+            "Nenhuma cultura é superior às outras.",
+            "Deveríamos aceitar mais outras culturas.",
+            "Todas as sociedades são uma mistura de culturas."
         ],
         [//-3
-            "Everybody should speak at least two languages",
-            "All humans share a common identity",
+            "Todos devem falar pelo menos duas línguas.",
+            "Todos os seres humanos compartilham uma identidade comum.",
             "Our culture would be better with other cultures mixed in more"
         ],
         [//-4
-            "Governments should be as concerned about foreign citizens as they are about those within their borders.",
-            "Anybody who wants to enter the country should be able to",
-            "The benefits of open borders would outweigh the costs"
+            "Os governos devem ser tão preocupados com os cidadãos estrangeiros quanto com os que estão dentro das suas fronteiras.",
+            "Quem quiser entrar no país deve o poder fazer livremente.",
+            "Os benefícios das fronteiras abertas superariam os custos."
         ]
     ]];
