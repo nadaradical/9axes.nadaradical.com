@@ -318,14 +318,14 @@ questions =
             "The elders in society know the best path for it"
         ],
         [//-4
-            "Traditional medicines are often more effective than modern medicines",
-            "The Internet should be banned",
-            "We must go back to a basic way of life without modern conveniences."
+            "Os medicamentos tradicionais são frequentemente mais eficazes do que os medicamentos modernos.",
+            "A Internet deve ser proibida.",
+            "Deveriamos voltar a um modo de vida básico sem as conveniências modernas."
         ]],[//Assimilacionista-Multiculturalista`
         [//4
             "Os estrangeiros nunca devem entrar no meu país.",
             "Não devemos permitir refugiados.",
-            "Apenas as nossas línguas nacionais devem ser faladas no nosso país."
+            "Apenas as nossas línguas nacionais deviam ser faladas no nosso país."
         ],
         [//3
             "Only extremely talented immigrants, if that, should be permitted to enter the country",
