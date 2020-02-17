@@ -2,16 +2,16 @@ questions =
     [[//Descentralização-Centralização`
         [//4
             "Não há necessidade de um Governo central.",
-            "As subdivisões das nações devem ter seus próprios militares.",
-            "As leis das autárquias devem ter precedência sobre as leis nacionais"
+            "As regiões devem ter seus próprios militares.",
+            "As leis das autarquias devem ter precedência sobre as leis nacionais."
         ],
         [//3
-            "State and local laws should have precedence over national laws",
-            "O Governo central não consegue entender o que as pessoas precisam.",
-            "People should hold more loyalty to their local state than their country."
+            "As leis locais devem ter precedência sobre as leis nacionais.",
+            "O Governo central não consegue entender o que as pessoas querem.",
+            "As pessoas devem ter mais lealdade às suas autarquias do que ao seu país."
         ],
         [//2
-            "Local governments should have more power than they currently do",
+            "Os governos locais deviam ter mais poder do que atualmente.",
             "As leis devem variar de área para área e de cultura para cultura dentro de um país.",
             "It's a good idea to test a policy in one state rather than implementing it nationwide right away"
             
