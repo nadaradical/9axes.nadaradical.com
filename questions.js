@@ -3,7 +3,7 @@ questions =
         [//4
             "Não há necessidade de um Governo central.",
             "As subdivisões das nações devem ter seus próprios militares.",
-            "As leis das autárquicas devem ter precedência sobre as leis nacionais"
+            "As leis das autárquias devem ter precedência sobre as leis nacionais"
         ],
         [//3
             "State and local laws should have precedence over national laws",
@@ -325,7 +325,7 @@ questions =
         [//4
             "Os estrangeiros nunca devem entrar no meu país.",
             "Não devemos permitir refugiados.",
-            "Apenas as nossas línguas nacionais deviam ser faladas no nosso país."
+            "Apenas as línguas nacionais deviam ser faladas no país."
         ],
         [//3
             "Only extremely talented immigrants, if that, should be permitted to enter the country",
