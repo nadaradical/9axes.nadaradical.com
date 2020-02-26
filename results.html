@@ -104,19 +104,19 @@
         }
     }
 
-    leftArray = ["Federal","Democratico","Globalista","Militarista","Segurança","Igualdade","Secular","Progressivo","Assimilacionista"]
-    rightArray = ["Unitário","Autoritário","Isolacionista","Pacifista","Liberdade","Mercados","Religiosos","Tradicional","Multiculturalista"]
+    leftArray = ["Descentralista","Democratico","Globalista","Militarista","Protetor","Intervencionista","Secularista","Progressivista","Assimilacionista"]
+    rightArray = ["Centralista","Autoritário","Isolacionista","Pacifista","Libertário","Capitalista","Religioso","Conservador","Multiculturalista"]
 
     function setLabel(val,axis) {
-        if (val >= 90) { return "Fanático " + leftArray[axis] } else
-        if (val >= 80) { return "Extremo " + leftArray[axis] } else
+        if (val >= 90) { return leftArray[axis] + " Fanático" } else
+        if (val >= 80) { return leftArray[axis] + " Extremo" } else
         if (val >= 70) { return leftArray[axis] } else
-        if (val >= 60) { return "Moderado " + leftArray[axis] } else
+        if (val >= 60) { return leftArray[axis] + " Moderado" } else
         if (val > 40) { return "Neutro" } else
-        if (val > 30) { return "Moderado " + rightArray[axis] } else
+        if (val > 30) { return rightArray[axis] + " Moderado" } else
         if (val > 20) { return rightArray[axis] } else
-        if (val > 10) { return "Extremo" + rightArray[axis] } else
-        	{return "Fanático " + rightArray[axis]}
+        if (val > 10) { return rightArray[axis] + " Extremo" } else
+        	{return rightArray[axis] + " Fanático" }
     }
 
     a  = getQueryVariable("a")
