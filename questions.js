@@ -309,7 +309,7 @@ questions =
         ],
         [//-2
             "A tecnologia está afetando negativamente a sociedade moderna.",
-            "Genetic modification should be used rarely, if ever",
+            "As touradas devem ser preservadas devido ao seu caráter cultural e tradicional.",
             "Manter os valores da família é essencial."
         ],
         [//-3
