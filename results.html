@@ -80,14 +80,14 @@
     <img id="img-multiculture" src="value_images/multiculturalist.png" height="128pt"/>
 </div>
 <hr/>
-<a download="download" href="javascript:canvas.toDataURL('image/png');" onclick="download()"><canvas id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas></a>
+<a id="link" download="download" onclick="download()"><canvas id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas></a>
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Voltar</button> <br>
 <script>
     var download = function()
     {
-           var link = document.createElement('a');
-           link.download = 'results.png';
-           link.href = document.getElementById('banner').toDataURL()
+           var link = document.getElementById('link');
+           link.setAttribute('download', 'results.png');
+           link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
            link.click();
     }
     
