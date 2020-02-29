@@ -83,6 +83,14 @@
 <canvas id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas>
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Voltar</button> <br>
 <script>
+    var download = function()
+    {
+           var link = document.createElement('a');
+           link.download = 'results.png';
+           link.href = document.getElementById('banner').toDataURL()
+           link.click();
+    }
+    
     function getQueryVariable(variable)
     {
            var query = window.location.search.substring(1)
