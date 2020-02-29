@@ -104,11 +104,22 @@
                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
            }
     };
+	
+    function open_dialog() {
+           var canvas2 = document.getElementById('banner');
+           var canvas_image_data = canvas2.toDataURL();
+
+           var dlWindow = window.open("", "Transferir Resultados", "directories=0,titlebar=0,toolbar=0,location=0,status=0,menubar=0,scrollbars=no,resizable=no,width=800, height=1200");
+  
+           dlWindow.document.write('<img src="'+canvas_image_data+'" width="800" height="1200"/>');
+
+           return dlWindow;
+    }
 
     function resultsdownload()
     {
            if(isMobile.any()) {
-                   document.write('<img src="'+canvas.toDataURL("image/png").replace("image/png", "image/octet-stream")+'"/>');
+                   open_dialog();
            } else {
                    var canvas = document.getElementById('banner');
                    var link = document.getElementById('link');
