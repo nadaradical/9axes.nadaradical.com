@@ -119,7 +119,10 @@
     function resultsdownload()
     {
            if(isMobile.any()) {
-                   open_dialog();
+                   var cv = document.getElementsByTagName('canvas')[0];
+                   var link = document.getElementById('link');
+                   link.setAttribute('download', 'results.png');
+                   link.setAttribute('href', cv.toDataURL());
            } else {
                    var canvas = document.getElementsByTagName('canvas')[0];
                    var link = document.getElementById('link');
