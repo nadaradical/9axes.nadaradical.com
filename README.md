@@ -6,7 +6,7 @@ O 9Axes é um teste de coordenadas políticas bem simples que te vai ajudar a de
 * Democratico vs. Autoritário
 * Globalista vs. Isolacionista
 * Militarista vs. Pacifista
-* Segurança vs. Liberdade
+* Controlo vs. Liberdade
 * Intervencionismo vs. Livre Mercado
 * Secular vs. Religioso
 * Progressista vs. Conservador
