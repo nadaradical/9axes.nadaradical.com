@@ -80,8 +80,9 @@
     <img id="img-multiculture" src="value_images/multiculturalist.png" height="128pt"/>
 </div>
 <hr/>
-<a title="Clica para fazeres download dos resultados" id="link" download="download"><canvas id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas></a>
-<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Voltar</button> <br>
+<canvas id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas>
+<a id="link"><button class="button" onclick="resultsdownload();" style="background-color: #2196f3;">Salvar Resultados</button></a> <br>
+<button class="button" onclick="location.href='index.html';" style="background-color: #f44336;">Voltar</button> <br>
 <script>
     function resultsdownload()
     {
@@ -89,7 +90,6 @@
            var link = document.getElementById('link');
            link.setAttribute('download', 'results.png');
            link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
-           link.click();
     }
     
     function getQueryVariable(variable)
