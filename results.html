@@ -89,7 +89,8 @@
            var canvas = document.getElementById('banner');
            var link = document.getElementById('link');
            link.setAttribute('download', 'results.png');
-           link.setAttribute('href', canvas.toDataURL("image/png"));
+           link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
+	   window.location.href=canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
     }
     
     function getQueryVariable(variable)
