@@ -107,7 +107,7 @@
     };
 	
     function open_dialog() {
-           var canvas2 = document.getElementById('banner');
+           var canvas2 = document.getElementsByTagName('canvas')[0];
 
            var dlWindow = window.open("", "Transferir Resultados", "directories=0,titlebar=0,toolbar=0,location=0,status=0,menubar=0,scrollbars=no,resizable=no,width=800, height=1200");
   
@@ -121,7 +121,7 @@
            if(isMobile.any()) {
                    open_dialog();
            } else {
-                   var canvas = document.getElementById('banner');
+                   var canvas = document.getElementsByTagName('canvas')[0];
                    var link = document.getElementById('link');
                    link.setAttribute('download', 'results.png');
                    link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
