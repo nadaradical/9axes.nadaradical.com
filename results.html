@@ -5,7 +5,6 @@
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
-<script src="todataurl.js"></script>
 <script type="application/javascript">
     version = "Versão #1" //Remember to update this before making changes to the test itself!
 </script>
@@ -105,16 +104,6 @@
                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
            }
     };
-	
-    function open_dialog() {
-           var canvas2 = document.getElementsByTagName('canvas')[0];
-
-           var dlWindow = window.open("", "Transferir Resultados", "directories=0,titlebar=0,toolbar=0,location=0,status=0,menubar=0,scrollbars=no,resizable=no,width=800, height=1200");
-  
-           dlWindow.document.write('<img src="'+canvas2.toDataURL()+'" width="800" height="1200"/>');
-
-           return dlWindow;
-    }
 
     function resultsdownload()
     {
@@ -122,7 +111,7 @@
                    var cv = document.getElementsByTagName('canvas')[0];
                    var link = document.getElementById('link');
                    link.setAttribute('download', 'results.png');
-                   link.setAttribute('href', cv.toDataURL());
+                   link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
            } else {
                    var canvas = document.getElementsByTagName('canvas')[0];
                    var link = document.getElementById('link');
