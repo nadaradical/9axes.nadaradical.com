@@ -111,7 +111,7 @@
                    var cv = document.getElementsByTagName('canvas')[0];
                    var link = document.getElementById('link');
                    link.setAttribute('download', 'results.png');
-                   link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
+                   link.setAttribute('href', canvas.toDataURL("image/jpeg", 1.0));
            } else {
                    var canvas = document.getElementsByTagName('canvas')[0];
                    var link = document.getElementById('link');
