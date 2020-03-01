@@ -83,7 +83,7 @@
 <hr/>
 <canvas style="display: none" id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas>
 <a id="link"><button class="button" onclick="resultsdownload();" style="background-color: #2196f3;">Salvar Resultados</button></a> <br>
-<image style="display: none" id="bannerpng"></image>
+<p id="blob">blob</p>
 <button class="button" onclick="location.href='index.html';" style="background-color: #f44336;">Voltar</button> <br>
 <script>
     var isMobile = {
@@ -115,6 +115,7 @@
                    let URLObj = window.URL || window.webkitURL;
                    link.setAttribute('href', URLObj.createObjectURL(blob));
                    link.setAttribute('download', 'results.png');
+                   document.getElementById("blob").innerHTML = URLObj.createObjectURL(blob);
                    });
            } else {
                    var canvas = document.getElementsByTagName('canvas')[0];
