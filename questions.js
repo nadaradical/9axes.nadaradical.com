@@ -239,7 +239,7 @@ questions =
         [//-4
             "O Governo não deve regular a economia de todo.",
             "O verdadeiro livre mercado deve permitir que as multinacionais predadoras criem monopólios.",
-            "Quem não trabalha deve morrer."
+            "Que não trabalha não deve receber apoio do Estado."
         ]],[//Secular-Religioso`
         [//4
             "A religião deve ser banida.",
