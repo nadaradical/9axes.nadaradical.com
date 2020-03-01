@@ -8,7 +8,7 @@
 <script type="application/javascript">
     version = "Versão #1" //Remember to update this before making changes to the test itself!
 </script>
-<script src="https://hongru.github.io/proj/canvas2image/canvas2image.js"></script>
+<script src="https://code.jquery.com/jquery-git.js"></script>
 </head>
 
 <body>
@@ -110,17 +110,11 @@
     function resultsdownload()
     {
            if(isMobile.any()) {
-                   var canvas = document.getElementsByTagName('canvas')[0];
-                   canvas.toBlob(function(blob) {
-                        var newImg = document.getElementById("bannerpng")
-                        document.getElementById('bannerpng').style.display="block";
-                        url = URL.createObjectURL(blob);
-                        newImg.onload = function() {
-                             // no longer need to read the blob so it's revoked
-                             URL.revokeObjectURL(url);
-                        };
-                   newImg.src = url;
-                   document.body.appendChild(newImg);
+		   var link = document.getElementById('link');
+                   document.getElementsByTagName('canvas')[0].toBlob((blob)=>{
+                   let URLObj = window.URL || window.webkitURL;
+                   link.setAttribute('href', URLObj.createObjectURL(blob));
+                   link.setAttribute('download', 'results.png');
                    });
            } else {
                    var canvas = document.getElementsByTagName('canvas')[0];
