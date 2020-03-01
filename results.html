@@ -10,7 +10,7 @@
 </script>
 </head>
 
-<body onload="if(isMobile.any()) {document.getElementsByTagName('canvas')[0].style.display='block';}">
+<body onload="mobilecanvas()">
 <h1>9Axes</h1>
 <hr>
 
@@ -104,6 +104,8 @@
                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
            }
     };
+	
+    function mobilecanvas(){if(isMobile.any()) {document.getElementsByTagName('canvas')[0].style.display='block';}}
 
     function resultsdownload()
     {
