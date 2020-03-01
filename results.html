@@ -10,7 +10,7 @@
 </script>
 </head>
 
-<body>
+<body onload="if(isMobile.any()) {document.getElementsByTagName('canvas')[0].style.display='block';}">
 <h1>9Axes</h1>
 <hr>
 
@@ -109,6 +109,7 @@
     {
            if(isMobile.any()) {
                    document.getElementsByTagName('canvas')[0].style.display="block";
+		   
            } else {
                    var canvas = document.getElementsByTagName('canvas')[0];
                    var link = document.getElementById('link');
