@@ -8,7 +8,7 @@ questions =
         [//3
             "As leis locais devem ter precedência sobre as leis nacionais.",
             "O Governo central não consegue entender o que as pessoas querem.",
-            "As pessoas devem ter mais lealdade às suas autarquias do que ao seu país."
+            "As pessoas devem ter mais lealdade às suas regiões do que ao seu país."
         ],
         [//2
             "Os governos locais deviam ter mais poder do que atualmente.",
@@ -32,7 +32,7 @@ questions =
             "As pessoas devem pensar em si mesmas como cidadãos de sua Nação, e não do seu Estado."
         ],
         [//-3
-            "Um grupo de autarquias sem um Governo central forte é apenas uma aliança, não uma nação.",
+            "Um grupo de regiões sem um Governo central forte é apenas uma aliança, não uma nação.",
             "Um Governo central deve ser forte para proteger adequadamente todos os seus cidadãos.",
             "As autarquias não podem funcionar sem um Governo central forte."
         ],
@@ -47,7 +47,7 @@ questions =
             "Os representantes raramente representam bem a Nação."
         ],
         [//3
-            "É imporatante que o governo siga a opinião da maioria, ainda que ela possa estar errada.",
+            "É importante que o governo siga a opinião da maioria, ainda que ela possa estar errada.",
             "Quanto a mais pessoas perguntarem, maior é a chance de chegar à melhor decisão.",
             "Ninguém para além de mim pode representar adequadamente os meus pontos de vista."
         ],
