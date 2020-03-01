@@ -110,11 +110,18 @@
     function resultsdownload()
     {
            if(isMobile.any()) {
-		   var canvas = document.getElementsByTagName('canvas')[0];
-		   document.getElementById("bannerpng").src = canvas.toDataURL();
-                   document.getElementById('bannerpng').style.display="block";
-		   Canvas2Image.saveAsPNG(canvas);
-		   
+                   var canvas = document.getElementsByTagName('canvas')[0];
+                   canvas.toBlob(function(blob) {
+                        var newImg = document.getElementById("bannerpng")
+                        document.getElementById('bannerpng').style.display="block";
+                        url = URL.createObjectURL(blob);
+                        newImg.onload = function() {
+                             // no longer need to read the blob so it's revoked
+                             URL.revokeObjectURL(url);
+                        };
+                   newImg.src = url;
+                   document.body.appendChild(newImg);
+                   });
            } else {
                    var canvas = document.getElementsByTagName('canvas')[0];
                    var link = document.getElementById('link');
