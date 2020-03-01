@@ -110,13 +110,10 @@
     function resultsdownload()
     {
            if(isMobile.any()) {
-		   var link = document.getElementById('link');
-                   document.getElementsByTagName('canvas')[0].toBlob((blob)=>{
-                   let URLObj = window.URL || window.webkitURL;
-                   link.setAttribute('href', URLObj.createObjectURL(blob));
+                   var canvas = document.getElementsByTagName('canvas')[0];
+                   var link = document.getElementById('link');
                    link.setAttribute('download', 'results.png');
-                   document.getElementById("blob").innerHTML = URLObj.createObjectURL(blob);
-                   });
+                   link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
            } else {
                    var canvas = document.getElementsByTagName('canvas')[0];
                    var link = document.getElementById('link');
