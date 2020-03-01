@@ -112,7 +112,7 @@
            if(isMobile.any()) {
 		   var canvas = document.getElementsByTagName('canvas')[0];
 		   document.getElementById("bannerpng").src = canvas.toDataURL();
-                   document.getElementById('bannerpng')[0].style.display="block";
+                   document.getElementById('bannerpng').style.display="block";
 		   Canvas2Image.saveAsPNG(canvas);
 		   
            } else {
