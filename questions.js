@@ -169,7 +169,7 @@ questions =
         [//3
             "A polícia precisa de mais poder e proteção.",
             "É muito importante a manutenção da lei e da ordem.",
-            "A country must be sure to take all measures to enforce its laws"
+            "um país deve utilizar quaisquer medidas para reforçar as suas leis."
         ],
         [//2
             "Se não tens nada a esconder, não te deves preocupar com o governo ter acesso às tuas comunicações.",
