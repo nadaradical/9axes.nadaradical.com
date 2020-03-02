@@ -328,7 +328,7 @@ questions =
             "Apenas as línguas nacionais deviam ser faladas no país."
         ],
         [//3
-            "Only extremely talented immigrants, if that, should be permitted to enter the country",
+            "Apenas no caso de imenso talento os imigrantes devem ter permissão para entrar no país.",
             "Se aceitarmos os migrantes de todo, é importante que eles se integrem na nossa cultura.",
             "Os imigrantes nunca irão realmente adaptar-se ao nosso modo de vida."
         ],
@@ -355,9 +355,7 @@ questions =
         [//-3
             "Todos devem falar pelo menos duas línguas.",
             "Todos os seres humanos compartilham uma identidade comum.",
-            "Our culture would be better with other cultures mixed in more"
-        ],
-        [//-4
+            "A nossa cultura seria melhorada com a adição de outras em si mesma.",
             "Os governos devem ser tão preocupados com os cidadãos estrangeiros quanto com os que estão dentro das suas fronteiras.",
             "Quem quiser entrar no país deve o poder fazer livremente.",
             "Os benefícios das fronteiras abertas superariam os custos."
