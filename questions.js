@@ -183,7 +183,7 @@ questions =
         ],
         [//-1
             "A canábis deve ser legalizada.",
-            "People should be given freedom whenever it causes little security risk",
+            "As pessoas devem ter liberdade sempre mesmo que possa causar um pouco de risco à segurança das pessoas.",
             "O Governo não tem direito de olhar para vida pessoal da maioria das pessoas."
         ],
         [//-2
