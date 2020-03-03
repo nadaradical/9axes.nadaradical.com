@@ -78,7 +78,7 @@ questions =
         ],
         [//-4
             "As eleições são um desperdício de recursos.",
-            "Catering to popular opinion is detrimental to a nation",
+            "Ceder à opinião popular é prejudicial para uma nação.",
             "Uma Nação deve obedecer à sua liderança sem a questionar."
         ]],[//Globalista-Isolacionista`
         [//4
