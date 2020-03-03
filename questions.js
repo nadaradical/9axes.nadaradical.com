@@ -4,7 +4,7 @@ questions =
             "Não há necessidade de um Governo central.",
             "As regiões devem ter seus próprios militares.", 
             "As leis das autarquias devem ter precedência sobre as leis nacionais."
-        ],
+        ],n
         [//3
             "As leis locais devem ser antepostas sobre as leis nacionais.",
             "O Governo central não consegue entender as necessidades do seu povo.",
@@ -239,7 +239,7 @@ questions =
         [//-4
             "O Governo não deve regular a economia de todo.",
             "O verdadeiro livre mercado deve permitir que as multinacionais predadoras criem monopólios.",
-            "Que não trabalha não deve receber apoio do Estado."
+            "Quem não trabalha não deve receber apoio do Estado."
         ]],[//Secular-Religioso`
         [//4
             "A religião deve ser banida.",
