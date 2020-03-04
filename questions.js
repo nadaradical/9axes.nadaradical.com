@@ -356,6 +356,8 @@ questions =
             "Todos devem falar pelo menos duas línguas.",
             "Todos os seres humanos compartilham uma identidade comum.",
             "A nossa cultura seria melhorada com a adição de outras em si mesma.",
+        ],	
+        [//-4
             "Os governos devem ser tão preocupados com os cidadãos estrangeiros quanto com os que estão dentro das suas fronteiras.",
             "Quem quiser entrar no país deve o poder fazer livremente.",
             "Os benefícios das fronteiras abertas superariam os custos."
