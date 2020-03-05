@@ -2,9 +2,9 @@ questions =
     [[//Descentralização-Centralização`
         [//4
             "Não há necessidade de um Governo central.",
-            "As regiões devem ter seus próprios militares.", 
+            "As regiões devem ter os seus próprios militares.", 
             "As leis das autarquias devem ter precedência sobre as leis nacionais."
-        ],
+        ],n
         [//3
             "As leis locais devem ser antepostas sobre as leis nacionais.",
             "O Governo central não consegue entender as necessidades do seu povo.",
@@ -18,7 +18,7 @@ questions =
         ],
         [//1
             "Os Governos locais têm um melhor entendimento dos seus cidadãos do que o Governo central.",
-            "Os Governos locais tratam de questões que o Governo central nunca tocaria.",
+            "Os Governos locais tratam de questões que o Governo central nunca trataria.",
             "Os Governos locais dão a cada região uma boa representação dos seus pontos de vista."
         ],
         [//-1
@@ -28,7 +28,7 @@ questions =
         ],
         [//-2
             "O Governo central precisa de mais poder.",
-            "As subdivisões não devem se poder isentar das leis nacionais.",
+            "As subdivisões não se devem poder isentar das leis nacionais.",
             "As pessoas devem pensar em si mesmas como cidadãos da sua Nação, e não do seu Estado."
         ],
         [//-3
@@ -58,7 +58,7 @@ questions =
         ],
         [//1
             "A democracia é mais do que um mero processo de tomada de decisões.",
-            "As pessoas devem ter o poder de escolher seus líderes.",
+            "As pessoas devem ter o poder de escolher os seus líderes.",
             "O governo deve ser do povo para o povo."
         ],
         [//-1
@@ -68,7 +68,7 @@ questions =
         ],
         [//-2
              "Um Governo central rigidamente hierárquico é o melhor caminho para a manutenção da ordem.",
-             "A sociedade não poderia funcionar sem líderes e seguidores.",
+             "A sociedade não poderia funcionar sem líderes nem seguidores.",
              "A democracia torna muito fácil a promoção das maiorias às custas das minorias."
         ],
         [//-3
@@ -84,7 +84,7 @@ questions =
         [//4
             "Um governo mundial unido seria algo benéfico para a humanidade.",
             "Somos, antes de mais, cidadãos da Terra.",
-            "Para que a humanidade sobreviva, precisamos deixar de ter nações separadas."
+            "Para que a humanidade sobreviva, precisamos de deixar de ter nações separadas."
         ],
         [//3
             "A ONU (Organização das Nações Unidas) precisa de mais poder.",
@@ -92,7 +92,7 @@ questions =
             "Ter nações independentes com o risco de conflito global cria uma grande ameaça para a humanidade como um todo."
         ],
         [//2
-            "Eu apoio ligas regionais de países, como a União Europeia.",
+            "Eu apoio organizações internacionais, como a União Europeia.",
             "Governos devem ser responsáveis pela comunidade internacional.",
             "Nações que lutam entre si atrapalham o caminho para o progresso."
         ],
@@ -112,9 +112,9 @@ questions =
             "É importante proteger a cultura nacional."
         ],
         [//-3
-            "Minha nação deve ficar de fora dos assuntos internacionais.",
+            "A minha nação deve ficar de fora dos assuntos internacionais.",
             "A ONU (Organização das Nações Unidas) deve ser abolida.",
-            "Ninguém em outros países tem os nossos melhores interesses em mente."
+            "Ninguém, noutros países, tem os nossos melhores interesses em mente."
         ],
         [//-4
             "Diplomacia só prejudica as nações.",
@@ -143,7 +143,7 @@ questions =
         ],
         [//-1
             "É mais importante manter relações pacíficas com os demais países do que aumentar a força militar.",
-            "Opções diplomáticas devem sempre ser tentadas antes de opções militares serem consideradas.",
+            "Opções diplomáticas devem ser sempre tentadas antes de opções militares serem consideradas.",
             "Paz é preferível à guerra sempre que possível."
         ],
         [//-2
@@ -162,7 +162,7 @@ questions =
             "As nações não devem manter um exército."
         ]],[//Segurança-Liberdade`
         [//4
-            "Aqueles que discordam com governo devem ser removidos do país.",
+            "Aqueles que discordam com o governo devem ser removidos do país.",
             "O Governo deve monitorar todos os cidadãos para poder combater o terrorismo.",
             "As pessoas não devem ter proteções que possam impedir a descoberta da sua atividade criminosa."
         ],
@@ -178,13 +178,13 @@ questions =
         ],
         [//1
             "O Governo deve ter acesso aos e-mails de suspeitos de terrorismo.",
-            "É necessário renunciar algumas liberdade para manter as pessoas seguras.",
+            "É necessário renunciar algumas liberdades para manter as pessoas seguras.",
             "A liberdade absoluta torna uma sociedade perigosa."
         ],
         [//-1
             "A canábis deve ser legalizada.",
-            "As pessoas devem ter liberdade sempre mesmo que possa causar um pouco de risco à segurança das pessoas.",
-            "O Governo não tem direito de olhar para vida pessoal da maioria das pessoas."
+            "As pessoas devem ter liberdade sempre, mesmo que possa causar um pouco de risco à segurança das pessoas.",
+            "O Governo não tem direito de olhar para a vida pessoal da maioria das pessoas."
         ],
         [//-2
             "O aborto deve ser legal em todos os casos.",
@@ -203,7 +203,7 @@ questions =
         ]],[//Intervencionismo-Livre_Mercado`
         [//4
             "O comunismo, se implementado corretamente, seria uma boa forma de economia.",
-            "De cada qual segundo a sua capacidade; a cada qual segundo as suas necessidades.",
+            "A cada qual segundo a sua capacidade; a cada qual segundo as suas necessidades.",
             "Igualdade de resultado é importante."
         ],
         [//3
@@ -279,10 +279,10 @@ questions =
         [//-4
             "Teocracia é um bom sistema de Governo.",
             "O governo deve apoiar e reconhecer apenas uma religião.",
-            "A maioria das coisas más que acontecem no mundo são causadas pelo afastmento da religião."
+            "A maioria das coisas más que acontecem no mundo são causadas pelo afastamento da religião."
         ]],[//Progressista-Conservador`
         [//4
-            "Se a IA pudesse governar de forma mais eficaz que os humanos, a AI deveria governar.",
+            "Se a IA pudesse governar de forma mais eficaz que os humanos, a IA deveria governar.",
             "A modificação genética é uma força para o bem, mesmo em humanos.",
             "A tradição apenas atrapalha o progresso da tecnologia."
         ],
@@ -339,7 +339,7 @@ questions =
         ],
         [//1
             "Imigrantes ilegais devem ser deportados na maioria ou em todos os casos.",
-            "É de esperar que os imigrantes aprendem o idioma do país de acolhimento.",
+            "É de esperar que os imigrantes aprendam o idioma do país de acolhimento.",
             "A proteção de fronteiras é importante."
         ],
         [//-1
@@ -356,10 +356,8 @@ questions =
             "Todos devem falar pelo menos duas línguas.",
             "Todos os seres humanos compartilham uma identidade comum.",
             "A nossa cultura seria melhorada com a adição de outras em si mesma.",
-        ],	
-        [//-4
             "Os governos devem ser tão preocupados com os cidadãos estrangeiros quanto com os que estão dentro das suas fronteiras.",
-            "Quem quiser entrar no país deve o poder fazer livremente.",
+            "Quem quiser entrar no país deve poder fazê-lo livremente.",
             "Os benefícios das fronteiras abertas superariam os custos."
         ]
     ]];
