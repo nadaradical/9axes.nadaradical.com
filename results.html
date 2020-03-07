@@ -144,12 +144,12 @@
     diviArray = ["Separatista","Confederalista","Descentralista","Neutro","Devolucionista","Centralista","Unitário"]
     govtArray = ["Anarquista","Libertário","Liberal","Moderado","Estatista","Autoritário","Totalitário"]
     diplArray = ["Cosmopolitano","Internacionalista","Conformista","Equilibrado","Patriótico","Nacionalista","Chauvinista"]
-    miliArray = ["Junta Militar","Militarista","Paramilitarista","Neutro","Militar Democrata","Anti-Militarista","Pacifista"]
+    miliArray = ["Junta Militar","Militarista","Paramilitarista","Militar Democrata","Neutro","Anti-Militarista","Pacifista"]
     protArray = ["Vigilância em massa Global","Vigilância em massa","Vigilância Policial","Neutro","Privacidade do Governo","Privacidade do Governo e Corporações","Privacidade Total"]
     econArray = ["Comunista","Socialista","Social Democrata","Centrista","Apoiante de Livre Mercado","Capitalista","Laissez-Faire"]
     reliArray = ["Anticlericalista","Laicista","Secularista","Neutro","Etocrata","Teocrata","Clericalista"]
     sctyArray = ["Revolucionário","Muito Progressista","Progressista","Neutro","Tradicional","Conservador","Reacionário"]
-    sct2Array = ["Monoculturalista","Multicomunitarista","Interculturalista","Neutro","Assimilacionista","Multiculturalista","Intraculturalista"]
+    cultArray = ["Monoculturalista","Multicomunitarista","Interculturalista","Neutro","Assimilacionista","Multiculturalista","Intraculturalista"]
 
     function setCLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -210,7 +210,7 @@
     document.getElementById("f-label").innerHTML = setCLabel(f, econArray)
     document.getElementById("g-label").innerHTML = setCLabel(g, reliArray)
     document.getElementById("h-label").innerHTML = setCLabel(h, sctyArray)
-    document.getElementById("i-label").innerHTML = setCLabel(i, sct2Array)
+    document.getElementById("i-label").innerHTML = setCLabel(i, cultArray)
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
