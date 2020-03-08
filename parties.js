@@ -16,15 +16,15 @@ parties = [
     {
         "name": "Partido Social Democrata",
         "stats": {
-                        "divi": 0, //Separatismo vs. Unitarismo
-                        "govt": 0, //Anarquismo vs. Autoritarismo
-                        "dipl": 0, //Globalismo vs. Isolacionismo
-                        "mili": 0, //Militarismo vs. Pacifismo
-                        "prot": 0, //Controlo vs. Liberdade
-                        "econ": 0, //Intervencionismo vs. Livre Mercado
-                        "reli": 0, //Secular vs. Religioso
-                        "scty": 0, //Progressista vs. Conservador
-                        "cult": 0 //Assimilacionista vs. Multiculturalista
+                        "divi": 65, //Separatismo vs. Unitarismo
+                        "govt": 45, //Anarquismo vs. Autoritarismo
+                        "dipl": 70, //Globalismo vs. Isolacionismo
+                        "mili": 40, //Militarismo vs. Pacifismo
+                        "prot": 35, //Controlo vs. Liberdade
+                        "econ": 35, //Intervencionismo vs. Livre Mercado
+                        "reli": 75, //Secular vs. Religioso
+                        "scty": 45, //Progressista vs. Conservador
+                        "cult": 45 //Assimilacionista vs. Multiculturalista
         }
     },
     {
@@ -45,14 +45,14 @@ parties = [
         "name": "Partido Comunista Português",
         "stats": {
                         "divi": 0, //Separatismo vs. Unitarismo
-                        "govt": 0, //Anarquismo vs. Autoritarismo
-                        "dipl": 0, //Globalismo vs. Isolacionismo
-                        "mili": 0, //Militarismo vs. Pacifismo
-                        "prot": 0, //Controlo vs. Liberdade
-                        "econ": 0, //Intervencionismo vs. Livre Mercado
-                        "reli": 0, //Secular vs. Religioso
-                        "scty": 0, //Progressista vs. Conservador
-                        "cult": 0 //Assimilacionista vs. Multiculturalista
+                        "govt": 40, //Anarquismo vs. Autoritarismo
+                        "dipl": 80, //Globalismo vs. Isolacionismo
+                        "mili": 50, //Militarismo vs. Pacifismo
+                        "prot": 20, //Controlo vs. Liberdade
+                        "econ": 100, //Intervencionismo vs. Livre Mercado
+                        "reli": 80, //Secular vs. Religioso
+                        "scty": 60, //Progressista vs. Conservador
+                        "cult": 20 //Assimilacionista vs. Multiculturalista
         }
     },
     {
