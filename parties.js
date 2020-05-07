@@ -28,7 +28,7 @@ parties = [
         }
     },
     {
-        "name": "   Bloco de Esquerda",
+        "name": "Bloco de Esquerda",
         "stats": {
                         "divi": 0, //Separatismo vs. Unitarismo
                         "govt": 0, //Anarquismo vs. Autoritarismo
@@ -114,15 +114,15 @@ parties = [
     {
         "name": "Iniciativa Liberal",
         "stats": {
-                        "divi": 0, //Separatismo vs. Unitarismo
-                        "govt": 0, //Anarquismo vs. Autoritarismo
-                        "dipl": 0, //Globalismo vs. Isolacionismo
-                        "mili": 0, //Militarismo vs. Pacifismo
+                        "divi": 70, //Separatismo vs. Unitarismo
+                        "govt": 75, //Anarquismo vs. Autoritarismo
+                        "dipl": 50, //Globalismo vs. Isolacionismo
+                        "mili": 25, //Militarismo vs. Pacifismo
                         "prot": 0, //Controlo vs. Liberdade
-                        "econ": 0, //Intervencionismo vs. Livre Mercado
-                        "reli": 0, //Secular vs. Religioso
-                        "scty": 0, //Progressista vs. Conservador
-                        "cult": 0 //Assimilacionista vs. Multiculturalista
+                        "econ": 10, //Intervencionismo vs. Livre Mercado
+                        "reli": 50, //Secular vs. Religioso
+                        "scty": 60, //Progressista vs. Conservador
+                        "cult": 20 //Assimilacionista vs. Multiculturalista
         }
     },
     {
