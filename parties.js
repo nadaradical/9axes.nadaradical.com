@@ -111,6 +111,7 @@ parties = [
                         "cult": 20 //Assimilacionista vs. Multiculturalista
         }
     },
+    {
         "name": "Partido Libertário",
         "stats": {
                         "divi": 100, //Separatismo vs. Unitarismo
