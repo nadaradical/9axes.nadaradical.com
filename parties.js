@@ -70,7 +70,7 @@ parties = [
         }
     },
     {
-        "name": "CDS - Partido Popular",
+        "name": "CDS",
         "stats": {
                         "divi": 40, //Separatismo vs. Unitarismo
                         "govt": 40, //Anarquismo vs. Autoritarismo
