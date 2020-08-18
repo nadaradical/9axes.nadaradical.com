@@ -223,13 +223,13 @@
     for (var i = 0; i < parties.length; i++) {
         dist = 0
         dist += Math.pow(Math.abs(parties[i].stats.divi - a), 2)
-        dist += Math.pow(Math.abs(parties[i].stats.govt - b), 1.73856063)
+        dist += Math.pow(Math.abs(parties[i].stats.govt - b), 2)
         dist += Math.pow(Math.abs(parties[i].stats.dipl - c), 2)
-        dist += Math.pow(Math.abs(parties[i].stats.mili - d), 1.73856063)
+        dist += Math.pow(Math.abs(parties[i].stats.mili - d), 2)
         dist += Math.pow(Math.abs(parties[i].stats.prot - e), 2)
-        dist += Math.pow(Math.abs(parties[i].stats.econ - f), 1.73856063)
+        dist += Math.pow(Math.abs(parties[i].stats.econ - f), 2)
         dist += Math.pow(Math.abs(parties[i].stats.reli - g), 2)
-        dist += Math.pow(Math.abs(parties[i].stats.scty - h), 1.73856063)
+        dist += Math.pow(Math.abs(parties[i].stats.scty - h), 2)
         dist += Math.pow(Math.abs(parties[i].stats.cult - i), 2)
         if (dist < partydist) {
             party = parties[i].name
