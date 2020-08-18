@@ -207,7 +207,6 @@
     setBarValue("assimilation", i)
     setBarValue("multiculture", i2)
     
-
     document.getElementById("a-label").innerHTML = setCLabel(a, diviArray)
     document.getElementById("b-label").innerHTML = setCLabel(b, govtArray)
     document.getElementById("c-label").innerHTML = setCLabel(c, diplArray)
@@ -236,8 +235,9 @@
             partydist = dist
         }
     }
+
     document.getElementById("party-label").innerHTML = party
-	
+
     function createImage(src, x, y, w, h) {
         img = new Image ()
         img.src = src
@@ -250,7 +250,7 @@
         var c = document.getElementById("banner")
         var ctx = c.getContext("2d")
         ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0,0,1000,1200)
+        ctx.fillRect(0,0,800,1200)
 
         img = document.getElementById("img-federal")
         ctx.drawImage(img, 20, 120, 100, 100);
@@ -366,6 +366,7 @@
 
         ctx.font="300 30px Montserrat"
         ctx.fillText("9axes.nadaradical.com", 780, 55)
+	ctx.fillText(version, 780, 85)
         ctx.textAlign="center"
         ctx.fillText(document.getElementById("a-label").innerHTML, 400, 125)
         ctx.fillText(document.getElementById("b-label").innerHTML, 400, 245)
