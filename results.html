@@ -221,15 +221,15 @@
     partydist = Infinity
     for (var pari = 0; pari < parties.length; pari++) {
         dist = 0
-        dist += Math.pow(Math.abs(parties[i].stats.divi - a), 2)
-        dist += Math.pow(Math.abs(parties[i].stats.govt - b), 2)
-        dist += Math.pow(Math.abs(parties[i].stats.dipl - c), 2)
-        dist += Math.pow(Math.abs(parties[i].stats.mili - d), 1.73856063)
-        dist += Math.pow(Math.abs(parties[i].stats.prot - e), 1.73856063)
-        dist += Math.pow(Math.abs(parties[i].stats.econ - f), 2)
-        dist += Math.pow(Math.abs(parties[i].stats.reli - g), 2)
-        dist += Math.pow(Math.abs(parties[i].stats.scty - h), 2)
-        dist += Math.pow(Math.abs(parties[i].stats.cult - i), 1.73856063)
+        dist += Math.pow(Math.abs(parties[pari].stats.divi - a), 2)
+        dist += Math.pow(Math.abs(parties[pari].stats.govt - b), 2)
+        dist += Math.pow(Math.abs(parties[pari].stats.dipl - c), 2)
+        dist += Math.pow(Math.abs(parties[pari].stats.mili - d), 1.73856063)
+        dist += Math.pow(Math.abs(parties[pari].stats.prot - e), 1.73856063)
+        dist += Math.pow(Math.abs(parties[pari].stats.econ - f), 2)
+        dist += Math.pow(Math.abs(parties[pari].stats.reli - g), 2)
+        dist += Math.pow(Math.abs(parties[pari].stats.scty - h), 2)
+        dist += Math.pow(Math.abs(parties[pari].stats.cult - i), 1.73856063)
         if (dist < partydist) {
             party = parties[i].name
             partydist = dist
