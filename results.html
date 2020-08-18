@@ -231,7 +231,7 @@
         dist += Math.pow(Math.abs(parties[pari].stats.scty - h), 2)
         dist += Math.pow(Math.abs(parties[pari].stats.cult - i), 1.73856063)
         if (dist < partydist) {
-            party = parties[i].name
+            party = parties[pari].name
             partydist = dist
         }
     }
