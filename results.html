@@ -217,10 +217,6 @@
     document.getElementById("h-label").innerHTML = setCLabel(h, sctyArray)
     document.getElementById("i-label").innerHTML = setCLabel(i, cultArray)
 
-    party = ""
-
-    document.getElementById("party-label").innerHTML = party
-
     function createImage(src, x, y, w, h) {
         img = new Image ()
         img.src = src
@@ -360,5 +356,26 @@
         ctx.fillText(document.getElementById("h-label").innerHTML, 400, 965)
         ctx.fillText(document.getElementById("i-label").innerHTML, 400, 1085)
     }
+	
+    party = ""
+    partydist = Infinity
+    for (var i = 0; i < parties.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(parties[i].stats.divi - a), 2)
+        dist += Math.pow(Math.abs(parties[i].stats.govt - b), 2)
+        dist += Math.pow(Math.abs(parties[i].stats.dipl - c), 2)
+        dist += Math.pow(Math.abs(parties[i].stats.mili - d), 1.73856063)
+        dist += Math.pow(Math.abs(parties[i].stats.prot - e), 1.73856063)
+        dist += Math.pow(Math.abs(parties[i].stats.econ - f), 2)
+        dist += Math.pow(Math.abs(parties[i].stats.reli - g), 2)
+        dist += Math.pow(Math.abs(parties[i].stats.scty - h), 2)
+        dist += Math.pow(Math.abs(parties[i].stats.cult - i), 1.73856063)
+        if (dist < partydist) {
+            party = parties[i].name
+            partydist = dist
+        }
+    }
+
+    document.getElementById("party-label").innerHTML = party
     </script>
 </body>
