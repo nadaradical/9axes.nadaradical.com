@@ -60,11 +60,11 @@ parties = [
         "stats": {
                         "divi": 15, //Separatismo vs. Unitarismo
                         "govt": 20, //Anarquismo vs. Autoritarismo
-                        "dipl": 30, //Globalismo vs. Isolacionismo
-                        "mili": 65, //Militarismo vs. Pacifismo
+                        "dipl": 35, //Globalismo vs. Isolacionismo
+                        "mili": 80, //Militarismo vs. Pacifismo
                         "prot": 80, //Controlo vs. Liberdade
                         "econ": 25, //Intervencionismo vs. Livre Mercado
-                        "reli": 25, //Secular vs. Religioso
+                        "reli": 30, //Secular vs. Religioso
                         "scty": 20, //Progressista vs. Conservador
                         "cult": 80 //Assimilacionista vs. Multiculturalista
         }
