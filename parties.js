@@ -79,7 +79,7 @@ parties = [
                         "prot": 45, //Controlo vs. Liberdade
                         "econ": 35, //Intervencionismo vs. Livre Mercado
                         "reli": 20, //Secular vs. Religioso
-                        "scty": 20, //Progressista vs. Conservador
+                        "scty": 25, //Progressista vs. Conservador
                         "cult": 20 //Assimilacionista vs. Multiculturalista
         }
     },
