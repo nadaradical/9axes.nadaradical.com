@@ -6,9 +6,12 @@
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
 <script type="application/javascript">
-    version = "Versão #2.24" //Remember to update this before making changes to the test itself!
+    version = "Versão #3.0" //Remember to update this before making changes to the test itself!
 </script>
 </head>
+<script type="application/javascript"
+        src="ideologies.js">
+</script>
 
 <body>
 <h1>9Axes</h1>
@@ -79,6 +82,9 @@
     <div class="bar multiculture" id="bar-multiculture"><div class="text-wrapper" id="multiculture"></div></div>
     <img id="img-multiculture" src="value_images/multiculturalist.png" height="128pt"/>
 </div>
+<hr/>
+<h2>Partido mais próximo: <span class="weight-300" id="ideology-label"></span></h2>
+<p>A correspondência de partido é um trabalho em andamento e não é muito preciso.</p>
 <hr/>
 <canvas style="display: none" id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas>
 <a id="link"><button class="button" onclick="resultsdownload();" style="background-color: #2196f3;">Salvar Resultados</button></a> <br>
@@ -212,6 +218,26 @@
     document.getElementById("h-label").innerHTML = setCLabel(h, sctyArray)
     document.getElementById("i-label").innerHTML = setCLabel(i, cultArray)
 
+    ideology = ""
+    ideodist = Infinity
+    for (var i = 0; i < ideologies.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(ideologies[i].stats.divi - a), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.govt - b), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - c), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.mili - d), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.prot - e), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.econ - f), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.reli - g), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.scty - h), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.cult - i), 2)
+        if (dist < ideodist) {
+            ideology = ideologies[i].name
+            ideodist = dist
+        }
+    }
+    document.getElementById("ideology-label").innerHTML = ideology
+	
     function createImage(src, x, y, w, h) {
         img = new Image ()
         img.src = src
