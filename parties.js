@@ -56,6 +56,20 @@ parties = [
         }
     },
     {
+        "name": "CHEGA",
+        "stats": {
+                        "divi": 15, //Separatismo vs. Unitarismo
+                        "govt": 20, //Anarquismo vs. Autoritarismo
+                        "dipl": 30, //Globalismo vs. Isolacionismo
+                        "mili": 65, //Militarismo vs. Pacifismo
+                        "prot": 80, //Controlo vs. Liberdade
+                        "econ": 25, //Intervencionismo vs. Livre Mercado
+                        "reli": 25, //Secular vs. Religioso
+                        "scty": 20, //Progressista vs. Conservador
+                        "cult": 80 //Assimilacionista vs. Multiculturalista
+        }
+    },
+    {
         "name": "CDS - Partido Popular",
         "stats": {
                         "divi": 40, //Separatismo vs. Unitarismo
@@ -81,20 +95,6 @@ parties = [
                         "reli": 85, //Secular vs. Religioso
                         "scty": 75, //Progressista vs. Conservador
                         "cult": 20 //Assimilacionista vs. Multiculturalista
-        }
-    },
-    {
-        "name": "CHEGA",
-        "stats": {
-                        "divi": 15, //Separatismo vs. Unitarismo
-                        "govt": 20, //Anarquismo vs. Autoritarismo
-                        "dipl": 30, //Globalismo vs. Isolacionismo
-                        "mili": 65, //Militarismo vs. Pacifismo
-                        "prot": 80, //Controlo vs. Liberdade
-                        "econ": 25, //Intervencionismo vs. Livre Mercado
-                        "reli": 25, //Secular vs. Religioso
-                        "scty": 20, //Progressista vs. Conservador
-                        "cult": 80 //Assimilacionista vs. Multiculturalista
         }
     },
     {
