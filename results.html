@@ -10,7 +10,7 @@
 </script>
 </head>
 <script type="application/javascript"
-        src="ideologies.js">
+        src="parties.js">
 </script>
 
 <body>
@@ -218,25 +218,25 @@
     document.getElementById("h-label").innerHTML = setCLabel(h, sctyArray)
     document.getElementById("i-label").innerHTML = setCLabel(i, cultArray)
 
-    ideology = ""
-    ideodist = Infinity
-    for (var i = 0; i < ideologies.length; i++) {
+    party = ""
+    partydist = Infinity
+    for (var i = 0; i < parties.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.divi - a), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.govt - b), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - c), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.mili - d), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.prot - e), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.econ - f), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.reli - g), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.scty - h), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.cult - i), 2)
-        if (dist < ideodist) {
-            ideology = ideologies[i].name
-            ideodist = dist
+        dist += Math.pow(Math.abs(parties[i].stats.divi - a), 2)
+        dist += Math.pow(Math.abs(parties[i].stats.govt - b), 1.73856063)
+        dist += Math.pow(Math.abs(parties[i].stats.dipl - c), 2)
+        dist += Math.pow(Math.abs(parties[i].stats.mili - d), 1.73856063)
+        dist += Math.pow(Math.abs(parties[i].stats.prot - e), 2)
+        dist += Math.pow(Math.abs(parties[i].stats.econ - f), 1.73856063)
+        dist += Math.pow(Math.abs(parties[i].stats.reli - g), 2)
+        dist += Math.pow(Math.abs(parties[i].stats.scty - h), 1.73856063)
+        dist += Math.pow(Math.abs(parties[i].stats.cult - i), 2)
+        if (dist < partydist) {
+            party = ideologies[i].name
+            partydist = dist
         }
     }
-    document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("party-label").innerHTML = party
 	
     function createImage(src, x, y, w, h) {
         img = new Image ()
