@@ -1,16 +1,16 @@
 /* Agradecimentos */
 
 Nome: FXVNDER
-Feedverse: @fxvnder@pleroma.pt
+Fediverse: @fxvnder@pleroma.pt
 Twitter: @fxvnder
 Função: Tradutor e Revisor das Traduções
 
 Nome: OnikenX
-Feedverse: @OnikenX@pleroma.pt
+Fediverse: @OnikenX@pleroma.pt
 Twitter: @OnikenX_
 Função: Revisor das Traduções
 
 Nome: Nythiria
-Feedverse: @Nythiria@pleroma.pt
+Fediverse: @Nythiria@pleroma.pt
 Twitter: @nythiria
 Função: Edição e Tradução das Imagens
