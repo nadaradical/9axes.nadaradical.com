@@ -483,17 +483,27 @@
         ctx.fillText(document.getElementById("h-label").innerHTML, 400, 965)
         ctx.fillText(document.getElementById("i-label").innerHTML, 400, 1085)
 
+        function drawFittedText(text, x, y, maxWidth, minSize, maxSize, weight, align) {
+            var size = maxSize
+            ctx.textAlign = align
+            while (size > minSize) {
+                ctx.font = weight + " " + size + "px Montserrat"
+                if (ctx.measureText(text).width <= maxWidth) {
+                    break
+                }
+                size -= 1
+            }
+            ctx.fillText(text, x, y)
+        }
+
         ctx.fillStyle = "#222222"
         ctx.fillRect(20, 1215, 760, 145)
         ctx.fillStyle = "#FFFFFF"
-        ctx.font = "700 32px Montserrat"
-        ctx.textAlign = "left"
-        ctx.fillText("Partido mais próximo", 40, 1260)
-        ctx.fillText("Ideologia mais próxima", 40, 1330)
 
-        ctx.font = "400 30px Montserrat"
-        ctx.fillText(party + " (" + partySimilarityText + ")", 370, 1260)
-        ctx.fillText(ideology + " (" + ideologySimilarityText + ")", 370, 1330)
+        drawFittedText("Partido mais próximo", 40, 1260, 290, 22, 32, "700", "left")
+        drawFittedText("Ideologia mais próxima", 40, 1330, 290, 22, 32, "700", "left")
+        drawFittedText(party + " (" + partySimilarityText + ")", 760, 1260, 430, 20, 34, "400", "right")
+        drawFittedText(ideology + " (" + ideologySimilarityText + ")", 760, 1330, 430, 20, 34, "400", "right")
     }
     </script>
 </body>
