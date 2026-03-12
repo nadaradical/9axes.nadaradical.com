@@ -696,6 +696,19 @@ body.quiz-page h1 {
     background: linear-gradient(90deg, #dc2626, #ef4444);
 }
 
+
+.instructions-actions {
+    margin-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.instructions-actions .button-option {
+    margin: 0 auto;
+}
+
 .quiz-header {
     margin-bottom: 0.85rem;
 }
