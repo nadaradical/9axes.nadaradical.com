@@ -107,7 +107,7 @@
 <hr/>
 <canvas style="display: none" id="banner" width=800 height=1380 style="font-family:Montserrat"></canvas>
 <div class="results-actions">
-    <a id="link"><button class="button" onclick="resultsdownload();" style="background-color: #2196f3;">Salvar Resultados</button></a> <br>
+    <a id="link" href="#"><button id="save-results-button" class="button" onclick="return resultsdownload();" style="background-color: #2196f3;" disabled>Salvar Resultados</button></a> <br>
     <button class="button" onclick="location.href='index.html';" style="background-color: #f44336;">Voltar</button> <br>
 </div>
 </div>
@@ -133,19 +133,25 @@
            }
     };
 	
+    var bannerReady = false
+
     function resultsdownload()
     {
-           if(isMobile.any()) {
-                   var canvas = document.getElementsByTagName('canvas')[0];
-                   var link = document.getElementById('link');
-                   link.setAttribute('download', 'results.png');
-                   link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
-           } else {
-                   var canvas = document.getElementsByTagName('canvas')[0];
-                   var link = document.getElementById('link');
-                   link.setAttribute('download', 'results.png');
-                   link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
-           } 	
+           if (!bannerReady) {
+                   return false;
+           }
+
+           var canvas = document.getElementsByTagName('canvas')[0];
+           var link = document.getElementById('link');
+           link.setAttribute('download', 'results.png');
+           link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
+
+           if (!isMobile.any()) {
+                   link.click();
+                   return false;
+           }
+
+           return true;
     }
     
     function getQueryVariable(variable)
@@ -360,9 +366,30 @@
         }
     }
 
-    window.onload = function() {
+    function waitForImage(imageId) {
+        return new Promise(function(resolve) {
+            var image = document.getElementById(imageId)
+            if (image.complete && image.naturalWidth > 0) {
+                resolve()
+                return
+            }
+            image.onload = function() { resolve() }
+            image.onerror = function() { resolve() }
+        })
+    }
+
+    window.onload = async function() {
         var c = document.getElementById("banner")
         var ctx = c.getContext("2d")
+        var imageIds = [
+            "img-federal", "img-unitary", "img-democratic", "img-authority",
+            "img-globalist", "img-isolation", "img-militarist", "img-pacifist",
+            "img-security", "img-freedom", "img-equality", "img-markets",
+            "img-secular", "img-religious", "img-progress", "img-tradition",
+            "img-assimilation", "img-multiculture"
+        ]
+        await Promise.all(imageIds.map(waitForImage))
+
         var gradient = ctx.createLinearGradient(0, 0, 0, 1380)
         gradient.addColorStop(0, "#F5F7FA")
         gradient.addColorStop(1, "#ECEFF5")
@@ -469,6 +496,9 @@
         ctx.font = "400 22px Montserrat"
         ctx.textAlign = "center"
         ctx.fillText("Faça o teste em 9axes.nadaradical.com", 400, 1210)
+
+        bannerReady = true
+        document.getElementById("save-results-button").disabled = false
     }
     </script>
 </body>
