@@ -18,6 +18,7 @@
         <div class="politico-header-copy">
           <h1 id="politico-nome">A carregar perfil...</h1>
           <p class="results-subtitle" id="politico-partido"></p>
+          <a id="politico-bio-link" class="politico-bio-link" href="#" target="_blank" rel="noopener noreferrer" hidden>Ver biografia na Assembleia da República</a>
         </div>
       </div>
     </header>
@@ -155,7 +156,45 @@
       return Math.max(0, Math.min(100, Math.round(parsed)));
     }
 
-    function renderPolitico(data) {
+    function resolveAssembleiaPhoto(data) {
+      if (!data || !data.bidAssembleia) {
+        return Promise.resolve(data && data.foto ? data.foto : "");
+      }
+
+      var bid = String(data.bidAssembleia).trim();
+      if (!/^\d+$/.test(bid)) {
+        return Promise.resolve(data.foto || "");
+      }
+
+      var candidates = [
+        "https://www.parlamento.pt/DeputadoGP/Paginas/Fotografia.aspx?BID=" + bid,
+        "https://www.parlamento.pt/DeputadoGP/Paginas/FotoDeputado.aspx?BID=" + bid,
+        data.fotoAssembleia || "",
+        data.foto || ""
+      ].filter(Boolean);
+
+      return new Promise(function (resolve) {
+        var index = 0;
+
+        function tryNext() {
+          if (index >= candidates.length) {
+            resolve("");
+            return;
+          }
+
+          var candidate = candidates[index++];
+          var probe = new Image();
+          probe.referrerPolicy = "no-referrer";
+          probe.onload = function () { resolve(candidate); };
+          probe.onerror = tryNext;
+          probe.src = candidate;
+        }
+
+        tryNext();
+      });
+    }
+
+    async function renderPolitico(data) {
       var resultados = data.resultados || {};
       var divi = clampScore(resultados.divi);
       var govt = clampScore(resultados.govt);
@@ -174,9 +213,16 @@
 
       document.getElementById("politico-nome").textContent = data.nome || "Sem nome";
       document.getElementById("politico-partido").textContent = data.partido || "Sem partido";
-      if (data.foto) {
+      if (data.bidAssembleia) {
+        var bioLink = document.getElementById("politico-bio-link");
+        bioLink.href = "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=" + String(data.bidAssembleia).trim();
+        bioLink.hidden = false;
+      }
+
+      var resolvedPhoto = await resolveAssembleiaPhoto(data);
+      if (resolvedPhoto) {
         var foto = document.getElementById("politico-foto");
-        foto.src = data.foto;
+        foto.src = resolvedPhoto;
         foto.hidden = false;
       }
 

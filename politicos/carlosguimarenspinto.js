@@ -2,6 +2,7 @@ window.politicoData = {
   slug: "carlosguimarenspinto",
   nome: "Carlos Guimarães Pinto",
   partido: "Iniciativa Liberal",
+  bidAssembleia: 7343,
   foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Carlos_Guimaraes_Pinto_2024.jpg/512px-Carlos_Guimaraes_Pinto_2024.jpg",
   resultados: {
     divi: 75,
