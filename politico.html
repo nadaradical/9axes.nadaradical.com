@@ -18,6 +18,7 @@
         <div class="politico-header-copy">
           <h1 id="politico-nome">A carregar perfil...</h1>
           <p class="results-subtitle" id="politico-partido"></p>
+          <a id="politico-bio-link" class="politico-bio-link" href="#" target="_blank" rel="noopener noreferrer" hidden>Ver perfil na Assembleia da República</a>
         </div>
       </div>
     </header>
@@ -174,6 +175,13 @@
 
       document.getElementById("politico-nome").textContent = data.nome || "Sem nome";
       document.getElementById("politico-partido").textContent = data.partido || "Sem partido";
+
+      if (data.bidAssembleia) {
+        var bioLink = document.getElementById("politico-bio-link");
+        bioLink.href = "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=" + String(data.bidAssembleia).trim();
+        bioLink.hidden = false;
+      }
+
       if (data.foto) {
         var foto = document.getElementById("politico-foto");
         foto.src = data.foto;
