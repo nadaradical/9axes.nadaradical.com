@@ -109,17 +109,36 @@
     function calc_score(score) {
         return (50+5*score);
     }
+
+    function toBase64Url(value) {
+        return btoa(value).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    }
+
+    function signPayload(payload) {
+        var input = payload + "|9axes-share-v1|";
+        var hash = 0;
+        for (var i = 0; i < input.length; i++) {
+            hash = ((hash << 5) - hash) + input.charCodeAt(i);
+            hash |= 0;
+        }
+        return (hash >>> 0).toString(36);
+    }
+
     function results() {
-        location.href = `results.html`
-            + `?a=${calc_score(scores[0])}`
-            + `&b=${calc_score(scores[1])}`
-            + `&c=${calc_score(scores[2])}`
-            + `&d=${calc_score(scores[3])}`
-            + `&e=${calc_score(scores[4])}`
-            + `&f=${calc_score(scores[5])}`
-            + `&g=${calc_score(scores[6])}`
-            + `&h=${calc_score(scores[7])}`
-            + `&i=${calc_score(scores[8])}`;
+        var scoreData = {
+            a: calc_score(scores[0]),
+            b: calc_score(scores[1]),
+            c: calc_score(scores[2]),
+            d: calc_score(scores[3]),
+            e: calc_score(scores[4]),
+            f: calc_score(scores[5]),
+            g: calc_score(scores[6]),
+            h: calc_score(scores[7]),
+            i: calc_score(scores[8])
+        };
+        var payload = toBase64Url(JSON.stringify(scoreData));
+        var signature = signPayload(payload);
+        location.href = `results.html?r=${payload}&s=${signature}`;
     }
 </script>
 </body>
