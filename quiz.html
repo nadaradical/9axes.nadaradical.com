@@ -12,7 +12,7 @@
 <div class="quiz-shell">
     <section class="quiz-header">
         <h1>9Axes</h1>
-        <p class="quiz-subtitle">Versão curta · 45 questões</p>
+        <p class="quiz-subtitle">Versão curta · 72 questões</p>
         <h2 id="question-number">A carregar...</h2>
     </section>
 
@@ -41,14 +41,13 @@
     init_question(quests);
     
     function init_all_questions(qs) {
-        //1,2,3,-2,-4
-        var t = [1,2,3,5,7];
         for(var i = 0; i < 9; i++) //Number of Axes
         {
             var c = Math.random()<0.5;
-            for(var j = 0; j < 5; j++) //Number of questions per axis
+            for(var j = 0; j < 8; j++) //Number of questions per axis
             {
-                var m = [i,c?t[j]:(8-t[j]),Math.floor(Math.random()*questions[i][c?t[j]:(8-t[j])].length)];
+                var bucket = c ? j : (7-j);
+                var m = [i, bucket, Math.floor(Math.random()*questions[i][bucket].length)];
                 qs.push(m);
             }
         }
