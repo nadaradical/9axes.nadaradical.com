@@ -297,17 +297,13 @@
     document.getElementById("i-label").innerHTML = setCLabel(i, cultArray)
 
     function vectorDistance(stats, user) {
-        var sum = 0
-        sum += Math.pow(stats.divi - user.divi, 2)
-        sum += Math.pow(stats.govt - user.govt, 2)
-        sum += Math.pow(stats.dipl - user.dipl, 2)
-        sum += Math.pow(stats.mili - user.mili, 2)
-        sum += Math.pow(stats.prot - user.prot, 2)
-        sum += Math.pow(stats.econ - user.econ, 2)
-        sum += Math.pow(stats.reli - user.reli, 2)
-        sum += Math.pow(stats.scty - user.scty, 2)
-        sum += Math.pow(stats.cult - user.cult, 2)
-        return Math.sqrt(sum)
+        var player = [user.divi, user.govt, user.dipl, user.mili, user.prot, user.econ, user.reli, user.scty, user.cult]
+        var ideology = [stats.divi, stats.govt, stats.dipl, stats.mili, stats.prot, stats.econ, stats.reli, stats.scty, stats.cult]
+        var distance = 0
+        for (var idx = 0; idx < player.length; idx++) {
+            distance += Math.pow(player[idx] - ideology[idx], 2)
+        }
+        return Math.sqrt(distance)
     }
 
     function similarityFromDistance(distance) {
