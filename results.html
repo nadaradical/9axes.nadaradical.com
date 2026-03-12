@@ -16,9 +16,12 @@
         src="ideologies.js">
 </script>
 
-<body>
-<h1>9Axes</h1>
-<hr>
+<body class="results-page">
+<div class="results-shell">
+<header class="results-header">
+    <h1>9Axes</h1>
+    <p class="results-subtitle">Seu panorama político em nove eixos</p>
+</header>
 
 <h1>Resultados</h1>
 
@@ -86,15 +89,28 @@
     <img id="img-multiculture" src="value_images/multiculturalist.png" height="128pt"/>
 </div>
 <hr/>
-<h2>Partido mais próximo: <span class="weight-300" id="party-label"></span></h2>
-<h2><b>Semelhança com o partido: <span class="weight-300" id="party-similarity"></span></h2>
-
-<h2>Ideologia mais próxima: <span class="weight-300" id="ideology-label"></span></h2>
-<h2>Semelhança com a ideológica: <span class="weight-300" id="ideology-similarity"></span></h2>
+<section class="results-summary" aria-label="Resumo do resultado">
+    <h2 class="summary-title">Partido e Ideologia mais próximos</h2>
+    <div class="summary-grid">
+        <article class="summary-card">
+            <h3 class="summary-card-title">Partido mais próximo</h3>
+            <p class="summary-result" id="party-label"></p>
+            <p class="summary-meta">Semelhança com o partido: <span id="party-similarity"></span></p>
+        </article>
+        <article class="summary-card">
+            <h3 class="summary-card-title">Ideologia mais próxima</h3>
+            <p class="summary-result" id="ideology-label"></p>
+            <p class="summary-meta">Semelhança ideológica: <span id="ideology-similarity"></span></p>
+        </article>
+    </div>
+</section>
 <hr/>
 <canvas style="display: none" id="banner" width=800 height=1380 style="font-family:Montserrat"></canvas>
-<a id="link"><button class="button" onclick="resultsdownload();" style="background-color: #2196f3;">Salvar Resultados</button></a> <br>
-<button class="button" onclick="location.href='index.html';" style="background-color: #f44336;">Voltar</button> <br>
+<div class="results-actions">
+    <a id="link"><button class="button" onclick="resultsdownload();" style="background-color: #2196f3;">Salvar Resultados</button></a> <br>
+    <button class="button" onclick="location.href='index.html';" style="background-color: #f44336;">Voltar</button> <br>
+</div>
+</div>
 <script>
     var isMobile = {
            Android: function() {
