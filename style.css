@@ -789,3 +789,85 @@ body.quiz-page .small_button_off {
         min-height: 150px;
     }
 }
+
+.politico-shell {
+    padding-top: 1.4rem;
+}
+
+.politico-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.politico-meta {
+    min-width: 0;
+}
+
+.politico-kicker {
+    text-align: left;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 11pt;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.politico-page .politico-header h1 {
+    text-align: left;
+    margin: 0.1rem 0;
+    font-size: clamp(30pt, 6vw, 58pt);
+}
+
+.politico-page .politico-header .results-subtitle {
+    text-align: left;
+    margin: 0;
+}
+
+.politico-link {
+    color: rgba(224, 242, 254, 0.98);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13pt;
+}
+
+.politico-link:hover {
+    color: #ffffff;
+}
+
+.politico-error {
+    margin: 0.8rem 0;
+    border: 1px solid #fca5a5;
+    background: #fef2f2;
+    color: #7f1d1d;
+    border-radius: 10px;
+    padding: 0.7rem 0.85rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+}
+
+@media (max-width: 700px) {
+    .politico-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .politico-page .politico-header h1,
+    .politico-page .politico-header .results-subtitle,
+    .politico-kicker {
+        text-align: left;
+    }
+}
+
+
+.politico-page .results-summary {
+    text-align: center;
+}
+
+.politico-page .summary-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.politico-page .summary-card {
+    width: min(100%, 420px);
+}
