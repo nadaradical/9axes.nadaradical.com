@@ -8,6 +8,7 @@
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/javascript" src="ideologies.js"></script>
 </head>
 <body class="results-page politico-page">
 <div class="results-shell politico-shell">
@@ -93,6 +94,19 @@
         <div class="bar multiculture" id="bar-multiculture"><div class="text-wrapper" id="multiculture"></div></div>
         <img src="value_images/multiculturalist.png" alt="Multiculturalismo" height="128">
     </div>
+
+<hr/>
+<section class="results-summary" aria-label="Resumo ideológico">
+    <h2 class="summary-title">Ideologia mais próxima</h2>
+    <div class="summary-grid">
+        <article class="summary-card">
+            <h3 class="summary-card-title">Ideologia</h3>
+            <p class="summary-result" id="ideology-label">-</p>
+            <p class="summary-meta">Semelhança ideológica: <span id="ideology-similarity">-</span></p>
+        </article>
+    </div>
+</section>
+
 </div>
 
 <script>
@@ -161,6 +175,48 @@ function showError(message) {
     errorElement.hidden = false;
 }
 
+
+function vectorDistance(stats, user) {
+    var sum = 0;
+    sum += Math.pow(stats.divi - user.divi, 2);
+    sum += Math.pow(stats.govt - user.govt, 2);
+    sum += Math.pow(stats.dipl - user.dipl, 2);
+    sum += Math.pow(stats.mili - user.mili, 2);
+    sum += Math.pow(stats.prot - user.prot, 2);
+    sum += Math.pow(stats.econ - user.econ, 2);
+    sum += Math.pow(stats.reli - user.reli, 2);
+    sum += Math.pow(stats.scty - user.scty, 2);
+    sum += Math.pow(stats.cult - user.cult, 2);
+    return Math.sqrt(sum);
+}
+
+function similarityFromDistance(distance) {
+    var maxDistance = Math.sqrt(9 * Math.pow(100, 2));
+    var similarity = Math.round((1 - (distance / maxDistance)) * 100);
+    return Math.max(0, Math.min(100, similarity));
+}
+
+function setClosestIdeology(resultados) {
+    if (!Array.isArray(window.ideologies) || window.ideologies.length === 0) {
+        return;
+    }
+
+    var ideology = "";
+    var ideologyDist = Infinity;
+
+    for (var idx = 0; idx < window.ideologies.length; idx++) {
+        var current = window.ideologies[idx];
+        var distance = vectorDistance(current.stats, resultados);
+        if (distance < ideologyDist) {
+            ideology = current.name;
+            ideologyDist = distance;
+        }
+    }
+
+    document.getElementById("ideology-label").textContent = ideology || "-";
+    document.getElementById("ideology-similarity").textContent = similarityFromDistance(ideologyDist) + "%";
+}
+
 function renderPolitico(data) {
     if (!data || !data.resultados) {
         showError("Dados inválidos para este político.");
@@ -180,6 +236,7 @@ function renderPolitico(data) {
     }
 
     setResultados(data.resultados);
+    setClosestIdeology(data.resultados);
 }
 
 function loadPolitico(slug) {

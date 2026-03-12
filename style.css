@@ -857,3 +857,17 @@ body.quiz-page .small_button_off {
         text-align: left;
     }
 }
+
+
+.politico-page .results-summary {
+    text-align: center;
+}
+
+.politico-page .summary-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.politico-page .summary-card {
+    width: min(100%, 420px);
+}
