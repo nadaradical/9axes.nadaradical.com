@@ -92,7 +92,7 @@
 <h2>Ideologia mais próxima: <span class="weight-300" id="ideology-label"></span></h2>
 <h2>Semelhança com a ideológica: <span class="weight-300" id="ideology-similarity"></span></h2>
 <hr/>
-<canvas style="display: none" id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas>
+<canvas style="display: none" id="banner" width=800 height=1380 style="font-family:Montserrat"></canvas>
 <a id="link"><button class="button" onclick="resultsdownload();" style="background-color: #2196f3;">Salvar Resultados</button></a> <br>
 <button class="button" onclick="location.href='index.html';" style="background-color: #f44336;">Voltar</button> <br>
 <script>
@@ -332,10 +332,13 @@
         }
     }
 
+    partySimilarityText = similarityFromDistance(partydist) + "%"
+    ideologySimilarityText = similarityFromDistance(ideologyDist) + "%"
+
     document.getElementById("party-label").innerHTML = party
-	document.getElementById("party-similarity").innerHTML = similarityFromDistance(partydist) + "%"
+	document.getElementById("party-similarity").innerHTML = partySimilarityText
     document.getElementById("ideology-label").innerHTML = ideology
-    document.getElementById("ideology-similarity").innerHTML = similarityFromDistance(ideologyDist) + "%"
+    document.getElementById("ideology-similarity").innerHTML = ideologySimilarityText
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
@@ -349,7 +352,7 @@
         var c = document.getElementById("banner")
         var ctx = c.getContext("2d")
         ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0,0,800,1200)
+        ctx.fillRect(0,0,800,1380)
 
         img = document.getElementById("img-federal")
         ctx.drawImage(img, 20, 120, 100, 100);
@@ -479,6 +482,18 @@
         ctx.fillText(document.getElementById("g-label").innerHTML, 400, 845)
         ctx.fillText(document.getElementById("h-label").innerHTML, 400, 965)
         ctx.fillText(document.getElementById("i-label").innerHTML, 400, 1085)
+
+        ctx.fillStyle = "#222222"
+        ctx.fillRect(20, 1215, 760, 145)
+        ctx.fillStyle = "#FFFFFF"
+        ctx.font = "700 32px Montserrat"
+        ctx.textAlign = "left"
+        ctx.fillText("Partido mais próximo", 40, 1260)
+        ctx.fillText("Ideologia mais próxima", 40, 1330)
+
+        ctx.font = "400 30px Montserrat"
+        ctx.fillText(party + " (" + partySimilarityText + ")", 370, 1260)
+        ctx.fillText(ideology + " (" + ideologySimilarityText + ")", 370, 1330)
     }
     </script>
 </body>
