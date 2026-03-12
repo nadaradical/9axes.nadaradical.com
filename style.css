@@ -24,6 +24,8 @@ p {
     font-size: 16pt;
     line-height: 1;
     margin: 4pt;
+    text-align: center;
+    text-wrap: pretty;
 }
 a{
     color: #2222DD;
@@ -69,6 +71,8 @@ h2 {
     line-height: 36pt;
     margin-top: 12pt;
     margin-bottom: 0pt;
+    text-align: center;
+    text-wrap: balance;
 }
 h3 {
     color: #444444;
@@ -77,10 +81,15 @@ h3 {
     line-height: 18pt;
     margin-top: 12pt;
     margin-bottom: 0pt;
+    text-align: center;
+    text-wrap: balance;
 }
 li {
     font-size: 16pt;
-    text-indent: 16pt;
+    text-indent: 0;
+    text-align: center;
+    text-wrap: pretty;
+    list-style-position: inside;
 }
 a {
     font-family: inherit;
