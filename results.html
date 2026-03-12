@@ -140,8 +140,84 @@
                    var pair = vars[i].split("=")
                    if(pair[0] == variable) {return pair[1]}
            }
-           return(NaN);
+           return "";
     }
+
+    function fromBase64Url(value) {
+        var normalized = value.replace(/-/g, '+').replace(/_/g, '/');
+        while (normalized.length % 4) {
+            normalized += '=';
+        }
+        return atob(normalized);
+    }
+
+    function signPayload(payload) {
+        var input = payload + "|9axes-share-v1|";
+        var hash = 0;
+        for (var i = 0; i < input.length; i++) {
+            hash = ((hash << 5) - hash) + input.charCodeAt(i);
+            hash |= 0;
+        }
+        return (hash >>> 0).toString(36);
+    }
+
+    function clampScore(value) {
+        var parsed = Number(value);
+        if (Number.isNaN(parsed)) {
+            return NaN;
+        }
+        return Math.max(0, Math.min(100, parsed));
+    }
+
+    function loadValidatedScores() {
+        var payload = getQueryVariable("r");
+        var signature = getQueryVariable("s");
+        if (!payload || !signature || signPayload(payload) !== signature) {
+            return null;
+        }
+
+        try {
+            var decoded = JSON.parse(fromBase64Url(payload));
+            var keys = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
+            var output = {};
+            for (var i = 0; i < keys.length; i++) {
+                var key = keys[i];
+                var value = clampScore(decoded[key]);
+                if (Number.isNaN(value)) {
+                    return null;
+                }
+                output[key] = value;
+            }
+            return output;
+        } catch (error) {
+            return null;
+        }
+    }
+
+    var scores = loadValidatedScores();
+    if (!scores) {
+        document.body.innerHTML = "<h1>9Axes</h1><hr><h2>Link de resultados inválido ou alterado.</h2><button class=\"button\" onclick=\"location.href=\'index.html\';\" style=\"background-color: #f44336;\">Voltar</button>";
+        throw new Error("Invalid share payload");
+    }
+
+    a  = scores.a
+    b  = scores.b
+    c  = scores.c
+    d  = scores.d
+    e  = scores.e
+    f  = scores.f
+    g  = scores.g
+    h  = scores.h
+    i  = scores.i
+    a2 = 100-a;
+    b2 = 100-b;
+    c2 = 100-c;
+    d2 = 100-d;
+    e2 = 100-e;
+    f2 = 100-f;
+    g2 = 100-g;
+    h2 = 100-h;
+    i2 = 100-i;
 
     function setBarValue(name, value) {
         innerel = document.getElementById(name)
@@ -174,25 +250,6 @@
         if (val >= 0) { return ary[6] } else
                 {return ""}
     }
-
-    a  = getQueryVariable("a")
-    b  = getQueryVariable("b")
-    c  = getQueryVariable("c")
-    d  = getQueryVariable("d")
-    e  = getQueryVariable("e")
-    f  = getQueryVariable("f")
-    g  = getQueryVariable("g")
-    h  = getQueryVariable("h")
-    i  = getQueryVariable("i")
-    a2 = 100-a;
-    b2 = 100-b;
-    c2 = 100-c;
-    d2 = 100-d;
-    e2 = 100-e;
-    f2 = 100-f;
-    g2 = 100-g;
-    h2 = 100-h;
-    i2 = 100-i;
 
     setBarValue("federal", a)
     setBarValue("unitary", a2)
