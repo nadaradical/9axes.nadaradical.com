@@ -6,22 +6,31 @@
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
 </head>
-<body>
-<script type="application/javascript"
-        src="questions.js">
-</script>
-<h1>9Axes</h1>
-<hr>
-<h2 style="text-align:center;" id="question-number">A carregar...</h2>
-<p class="question" id="question-text"></p>
-<button class="button" onclick="next_question( 2)" style="background-color: #1b5e20;">Concordo Fortemente</button> <br>
-<button class="button" onclick="next_question( 1)" style="background-color: #4caf50;">Concordo</button> <br>
-<button class="button" onclick="next_question( 0)" style="background-color: #bbbbbb;">Neutro/Incerto</button> <br>
-<button class="button" onclick="next_question(-1)" style="background-color: #f44336;">Discordo</button> <br>
-<button class="button" onclick="next_question(-2)" style="background-color: #b71c1c;">Discordo Fortemente</button> <br>
-<button class="small_button" onclick="prev_question()" id="back_button">Voltar</button>
-<button class="small_button_off" id="back_button_off">Voltar</button><br>
+<body class="quiz-page">
+<script type="application/javascript" src="questions.js"></script>
 
+<div class="quiz-shell">
+    <section class="quiz-header">
+        <h1>9Axes</h1>
+        <p class="quiz-subtitle">Versão curta · 45 questões</p>
+        <h2 id="question-number">A carregar...</h2>
+    </section>
+
+    <p class="question" id="question-text"></p>
+
+    <section class="answer-grid">
+        <button class="button answer-button answer-strong-agree" onclick="next_question( 2)">Concordo Fortemente</button> <br>
+        <button class="button answer-button answer-agree" onclick="next_question( 1)">Concordo</button> <br>
+        <button class="button answer-button answer-neutral" onclick="next_question( 0)">Neutro / Incerto</button> <br>
+        <button class="button answer-button answer-disagree" onclick="next_question(-1)">Discordo</button> <br>
+        <button class="button answer-button answer-strong-disagree" onclick="next_question(-2)">Discordo Fortemente</button> <br>
+    </section>
+
+    <section class="quiz-actions">
+        <button class="small_button" onclick="prev_question()" id="back_button">Voltar</button>
+        <button class="small_button_off" id="back_button_off">Voltar</button><br>
+    </section>
+</div>
 
 <script>
     var scores = [0, 0, 0, 0, 0, 0, 0, 0, 0];//fed, dem, glo, mil, fre, equ, sec, pro, mul - User's scores
