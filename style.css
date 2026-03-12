@@ -471,18 +471,6 @@ p.politico-kicker {
     font-size: clamp(13pt, 2.2vw, 20pt);
 }
 
-a.politico-bio-link {
-    display: inline-block;
-    margin-top: 0.45rem;
-    color: #dbeafe;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12pt;
-    text-decoration: underline;
-}
-
-a.politico-bio-link:hover {
-    color: #ffffff;
-}
 
 p.politico-error {
     margin-top: 1.5rem;
@@ -510,8 +498,7 @@ p.politico-error {
     }
 
     .politico-header-copy .results-subtitle,
-    p.politico-kicker,
-    a.politico-bio-link {
+    p.politico-kicker {
         text-align: center;
     }
 }
