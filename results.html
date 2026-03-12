@@ -196,7 +196,7 @@
 
     var scores = loadValidatedScores();
     if (!scores) {
-        document.body.innerHTML = "<h1>9Axes</h1><hr><h2>Link de resultados inválido ou alterado.</h2><button class=\"button\" onclick=\"location.href=\'index.html\';\" style=\"background-color: #f44336;\">Voltar</button>";
+        document.body.innerHTML = "<h1>9Axes</h1><hr><center><h2>Link de resultados inválido ou alterado.</h2></center><br><button class=\"button\" onclick=\"location.href=\'index.html\';\" style=\"background-color: #f44336;\">Voltar</button>";
         throw new Error("Invalid share payload");
     }
 
