@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href='style.css?v=20260312c' rel='stylesheet' type='text/css'>
+<title>Político - 9Axes</title>
+<link rel="icon" type="x-icon" href="icon.png">
+<link rel="shortcut icon" type="x-icon" href="icon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="results-page politico-page">
+<div class="results-shell politico-shell">
+    <header class="results-header politico-header">
+        <div class="politico-meta">
+            <p class="politico-kicker">ANÁLISE INDIVIDUAL · 9 EIXOS</p>
+            <h1 id="politico-nome">A carregar...</h1>
+            <p id="politico-partido" class="results-subtitle"></p>
+            <a id="politico-ar-link" class="politico-link" href="#" target="_blank" rel="noopener noreferrer">Ver perfil na Assembleia da República</a>
+        </div>
+    </header>
+
+    <div id="erro" class="politico-error" hidden></div>
+
+    <h2><span class="weight-300">Descentralista</span></h2>
+    <div class="axis">
+        <img src="value_images/federal.png" alt="Separatismo" height="128">
+        <div class="bar federal" id="bar-federal"><div class="text-wrapper" id="federal"></div></div>
+        <div class="bar unitary" id="bar-unitary"><div class="text-wrapper" id="unitary"></div></div>
+        <img src="value_images/unitary.png" alt="Unitarismo" height="128">
+    </div>
+
+    <h2><span class="weight-300">Liberal</span></h2>
+    <div class="axis">
+        <img src="value_images/democracy.png" alt="Anarquismo" height="128">
+        <div class="bar democratic" id="bar-democratic"><div class="text-wrapper" id="democratic"></div></div>
+        <div class="bar authority" id="bar-authority"><div class="text-wrapper" id="authority"></div></div>
+        <img src="value_images/authority.png" alt="Autoritarismo" height="128">
+    </div>
+
+    <h2><span class="weight-300">Internacionalista</span></h2>
+    <div class="axis">
+        <img src="value_images/globalist.png" alt="Globalismo" height="128">
+        <div class="bar globalist" id="bar-globalist"><div class="text-wrapper" id="globalist"></div></div>
+        <div class="bar isolation" id="bar-isolation"><div class="text-wrapper" id="isolation"></div></div>
+        <img src="value_images/isolationist.png" alt="Isolacionismo" height="128">
+    </div>
+
+    <h2><span class="weight-300">Anti-Militarista</span></h2>
+    <div class="axis">
+        <img src="value_images/militarist.png" alt="Militarismo" height="128">
+        <div class="bar militarist" id="bar-militarist"><div class="text-wrapper" id="militarist"></div></div>
+        <div class="bar pacifist" id="bar-pacifist"><div class="text-wrapper" id="pacifist"></div></div>
+        <img src="value_images/pacifist.png" alt="Pacifismo" height="128">
+    </div>
+
+    <h2><span class="weight-300">Privacidade do Governo</span></h2>
+    <div class="axis">
+        <img src="value_images/security.png" alt="Controlo" height="128">
+        <div class="bar security" id="bar-security"><div class="text-wrapper" id="security"></div></div>
+        <div class="bar freedom" id="bar-freedom"><div class="text-wrapper" id="freedom"></div></div>
+        <img src="value_images/freedom.png" alt="Liberdade" height="128">
+    </div>
+
+    <h2><span class="weight-300">Capitalista</span></h2>
+    <div class="axis">
+        <img src="value_images/equality.png" alt="Intervencionismo" height="128">
+        <div class="bar equality" id="bar-equality"><div class="text-wrapper" id="equality"></div></div>
+        <div class="bar markets" id="bar-markets"><div class="text-wrapper" id="markets"></div></div>
+        <img src="value_images/markets.png" alt="Livre Mercado" height="128">
+    </div>
+
+    <h2><span class="weight-300">Laicista</span></h2>
+    <div class="axis">
+        <img src="value_images/secular.png" alt="Secularismo" height="128">
+        <div class="bar secular" id="bar-secular"><div class="text-wrapper" id="secular"></div></div>
+        <div class="bar religious" id="bar-religious"><div class="text-wrapper" id="religious"></div></div>
+        <img src="value_images/religious.png" alt="Religião" height="128">
+    </div>
+
+    <h2><span class="weight-300">Progressista</span></h2>
+    <div class="axis">
+        <img src="value_images/progress.png" alt="Progressismo" height="128">
+        <div class="bar progress" id="bar-progress"><div class="text-wrapper" id="progress"></div></div>
+        <div class="bar tradition" id="bar-tradition"><div class="text-wrapper" id="tradition"></div></div>
+        <img src="value_images/tradition.png" alt="Conservadorismo" height="128">
+    </div>
+
+    <h2><span class="weight-300">Multiculturalista</span></h2>
+    <div class="axis">
+        <img src="value_images/assimilationist.png" alt="Monoculturalismo" height="128">
+        <div class="bar assimilation" id="bar-assimilation"><div class="text-wrapper" id="assimilation"></div></div>
+        <div class="bar multiculture" id="bar-multiculture"><div class="text-wrapper" id="multiculture"></div></div>
+        <img src="value_images/multiculturalist.png" alt="Multiculturalismo" height="128">
+    </div>
+</div>
+
+<script>
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] === variable) {
+            return decodeURIComponent(pair[1] || "");
+        }
+    }
+    return "";
+}
+
+function sanitizeSlug(slug) {
+    return (slug || "").toLowerCase().replace(/[^a-z0-9_-]/g, "");
+}
+
+function setBarValue(name, value) {
+    var parsed = Number(value);
+    var safeValue = Number.isFinite(parsed) ? Math.max(0, Math.min(100, parsed)) : 50;
+    var innerElement = document.getElementById(name);
+    var outerElement = document.getElementById("bar-" + name);
+    outerElement.style.width = safeValue + "%";
+    innerElement.innerHTML = safeValue + "%";
+    if (innerElement.offsetWidth + 20 > outerElement.offsetWidth) {
+        innerElement.style.visibility = "hidden";
+    }
+}
+
+function setResultados(resultados) {
+    var divi = Number(resultados.divi);
+    var govt = Number(resultados.govt);
+    var dipl = Number(resultados.dipl);
+    var mili = Number(resultados.mili);
+    var prot = Number(resultados.prot);
+    var econ = Number(resultados.econ);
+    var reli = Number(resultados.reli);
+    var scty = Number(resultados.scty);
+    var cult = Number(resultados.cult);
+
+    setBarValue("federal", divi);
+    setBarValue("unitary", 100 - divi);
+    setBarValue("democratic", govt);
+    setBarValue("authority", 100 - govt);
+    setBarValue("globalist", dipl);
+    setBarValue("isolation", 100 - dipl);
+    setBarValue("militarist", mili);
+    setBarValue("pacifist", 100 - mili);
+    setBarValue("security", prot);
+    setBarValue("freedom", 100 - prot);
+    setBarValue("equality", econ);
+    setBarValue("markets", 100 - econ);
+    setBarValue("secular", reli);
+    setBarValue("religious", 100 - reli);
+    setBarValue("progress", scty);
+    setBarValue("tradition", 100 - scty);
+    setBarValue("assimilation", cult);
+    setBarValue("multiculture", 100 - cult);
+}
+
+function showError(message) {
+    var errorElement = document.getElementById("erro");
+    errorElement.textContent = message;
+    errorElement.hidden = false;
+}
+
+function renderPolitico(data) {
+    if (!data || !data.resultados) {
+        showError("Dados inválidos para este político.");
+        return;
+    }
+
+    document.title = (data.nome || "Político") + " - 9Axes";
+    document.getElementById("politico-nome").textContent = data.nome || "Nome indisponível";
+    document.getElementById("politico-partido").textContent = data.partido || "Partido indisponível";
+
+    var arLinkElement = document.getElementById("politico-ar-link");
+    if (data.bidAssembleia) {
+        arLinkElement.href = "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=" + encodeURIComponent(data.bidAssembleia);
+        arLinkElement.hidden = false;
+    } else {
+        arLinkElement.hidden = true;
+    }
+
+    setResultados(data.resultados);
+}
+
+function loadPolitico(slug) {
+    var script = document.createElement("script");
+    script.src = "politicos/" + slug + ".js";
+    script.onload = function() {
+        renderPolitico(window.politicoData);
+    };
+    script.onerror = function() {
+        showError("Não foi possível carregar os dados de '" + slug + "'.");
+    };
+    document.body.appendChild(script);
+}
+
+var rawSlug = getQueryVariable("r");
+var slug = sanitizeSlug(rawSlug);
+
+if (!slug) {
+    showError("Indique um político com ?r=nomedoslug");
+} else {
+    loadPolitico(slug);
+}
+</script>
+</body>
+</html>
