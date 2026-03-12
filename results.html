@@ -12,6 +12,9 @@
 <script type="application/javascript"
         src="parties.js">
 </script>
+<script type="application/javascript"
+        src="ideologies.js">
+</script>
 
 <body>
 <h1>9Axes</h1>
@@ -84,7 +87,10 @@
 </div>
 <hr/>
 <h2>Partido mais próximo: <span class="weight-300" id="party-label"></span></h2>
-<p>A correspondência de partido é um trabalho em andamento e não é muito preciso.</p>
+<p>Semelhança com o partido: <span class="weight-300" id="party-similarity"></span></p>
+
+<h2>Ideologia mais próxima: <span class="weight-300" id="ideology-label"></span></h2>
+<p>Semelhança ideológica: <span class="weight-300" id="ideology-similarity"></span></p>
 <hr/>
 <canvas style="display: none" id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas>
 <a id="link"><button class="button" onclick="resultsdownload();" style="background-color: #2196f3;">Salvar Resultados</button></a> <br>
@@ -216,27 +222,63 @@
     document.getElementById("g-label").innerHTML = setCLabel(g, reliArray)
     document.getElementById("h-label").innerHTML = setCLabel(h, sctyArray)
     document.getElementById("i-label").innerHTML = setCLabel(i, cultArray)
+
+    function vectorDistance(stats, user) {
+        var sum = 0
+        sum += Math.pow(stats.divi - user.divi, 2)
+        sum += Math.pow(stats.govt - user.govt, 2)
+        sum += Math.pow(stats.dipl - user.dipl, 2)
+        sum += Math.pow(stats.mili - user.mili, 2)
+        sum += Math.pow(stats.prot - user.prot, 2)
+        sum += Math.pow(stats.econ - user.econ, 2)
+        sum += Math.pow(stats.reli - user.reli, 2)
+        sum += Math.pow(stats.scty - user.scty, 2)
+        sum += Math.pow(stats.cult - user.cult, 2)
+        return Math.sqrt(sum)
+    }
+
+    function similarityFromDistance(distance) {
+        var maxDistance = Math.sqrt(9 * Math.pow(100, 2))
+        var similarity = Math.round((1 - (distance / maxDistance)) * 100)
+        return Math.max(0, Math.min(100, similarity))
+    }
+
+    var userStats = {
+        divi: a,
+        govt: b,
+        dipl: c,
+        mili: d,
+        prot: e,
+        econ: f,
+        reli: g,
+        scty: h,
+        cult: i
+    }
 	
     party = ""
     partydist = Infinity
     for (var pari = 0; pari < parties.length; pari++) {
-        dist = 0
-        dist += Math.pow(Math.abs(parties[pari].stats.divi - a), 2)
-        dist += Math.pow(Math.abs(parties[pari].stats.govt - b), 2)
-        dist += Math.pow(Math.abs(parties[pari].stats.dipl - c), 2)
-        dist += Math.pow(Math.abs(parties[pari].stats.mili - d), 1.73856063)
-        dist += Math.pow(Math.abs(parties[pari].stats.prot - e), 1.73856063)
-        dist += Math.pow(Math.abs(parties[pari].stats.econ - f), 2)
-        dist += Math.pow(Math.abs(parties[pari].stats.reli - g), 2)
-        dist += Math.pow(Math.abs(parties[pari].stats.scty - h), 2)
-        dist += Math.pow(Math.abs(parties[pari].stats.cult - i), 1.73856063)
+        dist = vectorDistance(parties[pari].stats, userStats)
         if (dist < partydist) {
             party = parties[pari].name
             partydist = dist
         }
     }
 
+    ideology = ""
+    ideologyDist = Infinity
+    for (var idi = 0; idi < ideologies.length; idi++) {
+        idist = vectorDistance(ideologies[idi].stats, userStats)
+        if (idist < ideologyDist) {
+            ideology = ideologies[idi].name
+            ideologyDist = idist
+        }
+    }
+
     document.getElementById("party-label").innerHTML = party
+	document.getElementById("party-similarity").innerHTML = similarityFromDistance(partydist) + "%"
+    document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("ideology-similarity").innerHTML = similarityFromDistance(ideologyDist) + "%"
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
