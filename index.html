@@ -1,6 +1,6 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
-<link href='style.css' rel='stylesheet' type='text/css'>
+<link href='style.css?v=20260312b' rel='stylesheet' type='text/css'>
 <title>9Axes | Um teste de coordenadas políticas</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
@@ -10,7 +10,7 @@
 <meta name="robots" content="all" />
 <meta name="language" content="pt-pt" />
 <meta name="author" content="NadaRadical, sob a liceça do MIT" />
-    
+
 <meta property="og:title" content="9Axes: Um teste de coordenadas políticas" />
 <meta property="og:url" content="https://9axes.nadaradical.com/" />
 <meta property="og:type" content="website" />
@@ -25,41 +25,65 @@
 <meta name="twitter:description" content="Teste as suas coordenadas políticas e veja como se situa nos nove eixos ideológicos." />
 <meta name="twitter:image" content="https://9axes.nadaradical.com/banner.png" />
 </head>
-<body>
+<body class="home-page">
 
 <a href="https://github.com/nadaradical/9axes.nadaradical.com/" class="github-corner" aria-label="Ver o código de fonte no GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-<h1>9Axes</h1>
-<hr>
-<button class="button" onclick="location.href='instructions.html';" style="font-size:36pt;">Clique aqui para começar!</button>
-<img src="values.png" class="center"></img>
 
-<h2>O que é o 9Axes?</h2>
-    <p>9Axes, baseado no <a href="http://raph.com.br/8values/">8values</a> é, em essência, um teste de coordenadas políticas que tenta indicar porcentagens para nove diferentes valores ideológicos. Será te apresentado uma afirmação e, então, responderás com a tua opinião sobre a mesma,  com <b>Concordo Fortemente</b> a <b>Discordo Fortemente</b>, e cada resposta afetará a tua pontuação final. Ao concluir o questionário, as tuas repostas serão comparadas com o máximo possível para cada valor, resultando assim em porcentagens dentro de cada eixo ideológico. Responda honestamente!</p>
-    <p>Existem duas versões deste questionário: a versão completa, que contem 24 questões para cada eixo ideológico, com um total de 216 questões, e a versão reduzida, que contem 5 questões para cada eixo ideológico, com um total de 45 questões. Sinta-se livre para escolher a versão que prefirir.</p><br>
-<h2>O que são os nove eixos?</h2>
-    <p>Existem nove eixos independentes, e em cada um deles têm dois valores opostos atribuídos a eles. Eles são:</p>
-    <p class="value-description"><b style="color:#fbc02d;">Separatismo vs. Unitarismo</b><br/>
-        O separatismo têm a ver com a reivindicação dos direitos nacionais por parte de um povo sem Estado; Com o unitarismo todo o poder fica num Governo central forte.</p>
-    <p class="value-description"><b style="color:#00796b;">Anarquismo vs. Autoritarismo</b><br/>
-        O anarquismo tende a favorecer a busca do fim do Estado e da sua autoridade.; O autoritário tende a preferir o julgamento do governo.</p>
-    <p class="value-description"><b style="color:#0288d1;">Globalismo vs. Isolacionismo</b><br/>
-        O globalista tende a favorecer organizações internacionais; O isolacionista tende a preferir evitar as relações internacionais.</p>
-    <p class="value-description"><b style="color:#689f38;">Militarismo vs. Pacifismo</b><br/>
-        O militarista tende a favorecer a ação militar; O pacifista tende a preferir evitar a ação militar.</p>
-    <p class="value-description"><b style="color:#303f9f;"> Controlo vs. Liberdade</b><br/>
-        O controlo tende a favorecer o governo priorizando a segurança com a intervenção do Estado nas vidas pessoais; A liberdade tende a preferir opor-se à intervenção do Estado nas vidas pessoais.</p>
-    <p class="value-description"><b style="color:#d32f2f;">Intervencionismo vs. Livre Mercado</b><br/>
-        O intervencionismo tende a favorecer que a economia deve distribuir valor igualmente entre a população, tendem a apoiar leis tributárias progressivas, programas sociais, e no geral, socialismo; O Livre Mercado tende a favorecer que a economia deve focar em crescimento rápido, tendem a apoiar impostos mais baixos, privatização, desregulamentação, e no geral, capitalismo.</p>
-    <p class="value-description"><b style="color:#f57c00;">Secular vs. Religioso</b><br/>
-        O secular tende a preferir que a religião fique fora do governo; E aqueles com maior pontuação religiosa tendem a preferir que a religião tenha algum efeito na sociedade.</p>
-    <p class="value-description"><b style="color:#7b1fa2;">Progressista vs. Conservador</b><br/>
-        O progressista tende a favorecer o avanço social, avanço de racionalidade, apoiam ações ambientais e grandes investimentos em pesquisa científica ou tecnológica; O Conservador tende a favorecer a tradição, acreditam em valores conservadores e aderência estrita a um código moral.</p>
-    <p class="value-description"><b style="color:#ea90ab;">Assimilacionista vs. Multiculturalista</b><br/>
-        O assimilacionista tende a favorecer os imigrantes, se houver, a entrarem em conformidade com a cultura nacional; O multiculturalista tende a preferir ter muitas identidades culturais no país.</p>
-<br><h2>Eu não gostei da minha pontuação!</h2>
-    <p>¯\_(ツ)_/¯<br/>
-    Se tens alguma sugestão ou crítica construtiva, sinta-se à vontade para abrir um problema na página do <a href="https://github.com/nadaradical/9axes.nadaradical.com/issues">GitHub</a>!</p>
-<br/>
-<p>Aviso Legal: A licença do projeto 8values concede os direitos de "modificar, fundir, publicar, distribuir" o software desde que "O aviso de direitos autorais e este aviso de permissão estejam incluídos em
-todas as cópias ou partes substanciais do Software." O aviso incluído pode ser encontrado <a href="https://github.com/nadaradical/9axes.nadaradical.com/blob/master/LICENSE">aqui</a>. Este projeto é lançado sob a mesma licença.</p>
+<div class="home-shell">
+    <section class="hero-card">
+        <h1>9Axes</h1>
+        <p class="hero-lead">Descobre o teu perfil ideológico em <b>9 eixos políticos</b>, com um resultado visual fácil de comparar e partilhar.</p>
+        <div class="hero-cta-group">
+            <button class="button hero-button" onclick="location.href='instructions.html';">Começar o teste</button>
+            <a class="hero-link" href="instructions.html">Ver instruções e escolher versão completa ou reduzida</a>
+        </div>
+        <ul class="hero-highlights">
+            <li><b>45 ou 216 perguntas</b> — escolhe o ritmo que preferires.</li>
+            <li><b>Resultado detalhado</b> — barras por eixo e resumo automático.</li>
+            <li><b>Totalmente gratuito</b> — feito em código aberto.</li>
+        </ul>
+        <img src="values.png" class="center hero-image" alt="Representação visual dos nove eixos do 9Axes">
+    </section>
+
+    <section class="info-grid">
+        <article class="info-card">
+            <h2>O que é o 9Axes?</h2>
+            <p>O 9Axes é um teste de coordenadas políticas inspirado no <a href="http://raph.com.br/8values/">8values</a>. Vais responder a afirmações de <b>Concordo Fortemente</b> a <b>Discordo Fortemente</b>, e cada resposta influencia a tua posição em nove eixos ideológicos independentes.</p>
+            <p>No final, o sistema compara as tuas respostas com os extremos de cada eixo e apresenta percentagens claras para facilitar a leitura do teu perfil político.</p>
+        </article>
+
+        <article class="info-card">
+            <h2>Como funciona?</h2>
+            <p>Existem duas versões do questionário:</p>
+            <ul>
+                <li><b>Versão reduzida:</b> 45 questões (5 por eixo), ideal para um resultado rápido.</li>
+                <li><b>Versão completa:</b> 216 questões (24 por eixo), ideal para maior precisão.</li>
+            </ul>
+            <p>Não existem respostas certas ou erradas: responde com honestidade para obter um retrato mais fiel das tuas convicções.</p>
+        </article>
+    </section>
+
+    <section class="axes-card">
+        <h2>Os nove eixos ideológicos</h2>
+        <p>Cada eixo representa duas visões opostas. O teu resultado mostra onde te encontras entre estes polos:</p>
+        <div class="axes-list">
+            <p class="value-description"><b style="color:#fbc02d;">Separatismo vs. Unitarismo</b><br/>Separatismo valoriza direitos nacionais de povos sem Estado; Unitarismo favorece um governo central forte.</p>
+            <p class="value-description"><b style="color:#00796b;">Anarquismo vs. Autoritarismo</b><br/>Anarquismo tende a rejeitar autoridade estatal; Autoritarismo privilegia maior controlo do governo.</p>
+            <p class="value-description"><b style="color:#0288d1;">Globalismo vs. Isolacionismo</b><br/>Globalismo favorece cooperação internacional; Isolacionismo prefere menor envolvimento externo.</p>
+            <p class="value-description"><b style="color:#689f38;">Militarismo vs. Pacifismo</b><br/>Militarismo apoia uso de força militar; Pacifismo dá prioridade a soluções não militares.</p>
+            <p class="value-description"><b style="color:#303f9f;">Controlo vs. Liberdade</b><br/>Controlo prioriza segurança com intervenção estatal; Liberdade favorece maior autonomia individual.</p>
+            <p class="value-description"><b style="color:#d32f2f;">Intervencionismo vs. Livre Mercado</b><br/>Intervencionismo defende maior ação económica do Estado; Livre Mercado privilegia iniciativa privada e menos regulação.</p>
+            <p class="value-description"><b style="color:#f57c00;">Secular vs. Religioso</b><br/>Secular separa religião e governo; Religioso aceita maior influência religiosa na sociedade.</p>
+            <p class="value-description"><b style="color:#7b1fa2;">Progressista vs. Conservador</b><br/>Progressista favorece mudança social e inovação; Conservador valoriza tradição e continuidade.</p>
+            <p class="value-description"><b style="color:#ea90ab;">Assimilacionista vs. Multiculturalista</b><br/>Assimilacionismo privilegia integração numa cultura dominante; Multiculturalismo valoriza coexistência de múltiplas culturas.</p>
+        </div>
+    </section>
+
+    <section class="footer-note">
+        <h2>Não concordas com o teu resultado?</h2>
+        <p>É normal: este teste é um retrato aproximado, não um rótulo definitivo. Se quiseres sugerir melhorias, abre uma issue no <a href="https://github.com/nadaradical/9axes.nadaradical.com/issues">GitHub</a>.</p>
+        <p class="legal-note">Aviso legal: este projeto segue os termos de licença do 8values. O aviso completo pode ser consultado <a href="https://github.com/nadaradical/9axes.nadaradical.com/blob/master/LICENSE">aqui</a>.</p>
+    </section>
+</div>
+
 </body>
