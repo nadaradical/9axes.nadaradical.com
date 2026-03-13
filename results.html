@@ -445,8 +445,8 @@
         ctx.textAlign = "right"
         ctx.fillText(version, 780, 86)
 
-        var rowTop = 150
-        var rowGap = 120
+        var rowTop = 162
+        var rowGap = 112
 
         axes.forEach(function(axis, index) {
             var y = rowTop + (index * rowGap)
@@ -476,26 +476,24 @@
             ctx.textAlign = "right"
             if (axis.rightValue > 20) { ctx.fillText(axis.rightValue + "%", 668, y + 57.5) }
 
-            ctx.fillStyle = "#ECEFF1"
-            ctx.font = "400 30px Montserrat"
-            ctx.textAlign = "center"
-            ctx.fillText(document.getElementById(axis.labelId).innerHTML, 400, y - 5)
+            // Removido texto de classificação (ex.: "Neutro", "Centrista")
+            // para reduzir ruído visual na imagem partilhada.
         })
 
         ctx.fillStyle = "#1F2937"
-        roundRect(20, 1215, 760, 145, 16)
+        roundRect(20, 1218, 760, 142, 16)
         ctx.fill()
         ctx.fillStyle = "#FFFFFF"
 
-        drawFittedText("Partido mais próximo", 40, 1260, 290, 22, 32, "700", "left")
+        drawFittedText("Partido mais próximo", 40, 1262, 290, 22, 32, "700", "left")
         drawFittedText("Ideologia mais próxima", 40, 1330, 290, 22, 32, "700", "left")
-        drawFittedText(party + " (" + partySimilarityText + ")", 760, 1260, 430, 20, 34, "400", "right")
+        drawFittedText(party + " (" + partySimilarityText + ")", 760, 1262, 430, 20, 34, "400", "right")
         drawFittedText(ideology + " (" + ideologySimilarityText + ")", 760, 1330, 430, 20, 34, "400", "right")
 
         ctx.fillStyle = "#607D8B"
         ctx.font = "400 22px Montserrat"
         ctx.textAlign = "center"
-        ctx.fillText("Faça o teste em 9axes.nadaradical.com", 400, 1210)
+        ctx.fillText("Faça o teste em 9axes.nadaradical.com", 400, 1204)
 
         bannerReady = true
         document.getElementById("save-results-button").disabled = false
