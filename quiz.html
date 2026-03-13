@@ -19,11 +19,13 @@
     <p class="question" id="question-text"></p>
 
     <section class="answer-grid">
-        <button class="button answer-button answer-strong-agree" onclick="next_question( 2)">Concordo Fortemente</button> <br>
-        <button class="button answer-button answer-agree" onclick="next_question( 1)">Concordo</button> <br>
-        <button class="button answer-button answer-neutral" onclick="next_question( 0)">Neutro / Incerto</button> <br>
-        <button class="button answer-button answer-disagree" onclick="next_question(-1)">Discordo</button> <br>
-        <button class="button answer-button answer-strong-disagree" onclick="next_question(-2)">Discordo Fortemente</button> <br>
+        <button class="button answer-button answer-level-3" onclick="next_question( 3)">Concordo totalmente</button> <br>
+        <button class="button answer-button answer-level-2" onclick="next_question( 2)">Concordo</button> <br>
+        <button class="button answer-button answer-level-1" onclick="next_question( 1)">Concordo ligeiramente</button> <br>
+        <button class="button answer-button answer-level-0" onclick="next_question( 0)">Neutro</button> <br>
+        <button class="button answer-button answer-level--1" onclick="next_question(-1)">Discordo ligeiramente</button> <br>
+        <button class="button answer-button answer-level--2" onclick="next_question(-2)">Discordo</button> <br>
+        <button class="button answer-button answer-level--3" onclick="next_question(-3)">Discordo totalmente</button> <br>
     </section>
 
     <section class="quiz-actions">
@@ -36,9 +38,33 @@
     var scores = [0, 0, 0, 0, 0, 0, 0, 0, 0];//fed, dem, glo, mil, fre, equ, sec, pro, mul - User's scores
     var qn = 0; // Question number
     var answers = [];
+    var axisMaxScores = [0, 0, 0, 0, 0, 0, 0, 0, 0];
     var quests = [];
     init_all_questions(quests);
+    init_axis_max_scores();
     init_question(quests);
+
+    function get_question_data(ax, rate, num) {
+        var entry = questions[ax][rate][num];
+        if (typeof entry === "string") {
+            return { question: entry, weight: 1 };
+        }
+
+        var text = entry.question || entry.text || "";
+        var parsedWeight = Number(entry.weight);
+        var weight = Number.isFinite(parsedWeight) && parsedWeight > 0 ? parsedWeight : 1;
+        return { question: text, weight: weight };
+    }
+
+    function init_axis_max_scores() {
+        for (var i = 0; i < quests.length; i++) {
+            var ax = quests[i][0];
+            var rate = quests[i][1];
+            var num = quests[i][2];
+            var questionData = get_question_data(ax, rate, num);
+            axisMaxScores[ax] += questionData.weight * 3;
+        }
+    }
     
     function init_all_questions(qs) {
         for(var i = 0; i < 9; i++) //Number of Axes
@@ -58,7 +84,8 @@
         var ax = quests[qn][0];
         var rate = quests[qn][1];
         var num = quests[qn][2];
-        document.getElementById("question-text").innerHTML = questions[ax][rate][num];
+        var questionData = get_question_data(ax, rate, num);
+        document.getElementById("question-text").innerHTML = questionData.question;
         document.getElementById("question-number").innerHTML = "Questão " + (qn + 1) + " de " + (quests.length);
         if (qn == 0) {
             document.getElementById("back_button").style.display = 'none';
@@ -93,9 +120,11 @@
         var ax = quests[qn][0];
         var rate = quests[qn][1];
         var num = quests[qn][2];
-        scores[ax] += mult*(rate<4?1:-1);
-        
-        answers[qn] = mult;
+        var questionData = get_question_data(ax, rate, num);
+        var delta = mult * (rate < 4 ? 1 : -1) * questionData.weight;
+        scores[ax] += delta;
+
+        answers[qn] = delta;
         qn++;
         if (qn < quests.length) {
             init_question();
@@ -110,12 +139,15 @@
         qn--;
         var ax = quests[qn][0];
         var rate = quests[qn][1];
-        var num = quests[qn][2];
-        scores[ax] -= answers[qn]*(rate<4?1:-1);
+        scores[ax] -= answers[qn];
         init_question();
     }
-    function calc_score(score) {
-        return (50+5*score);
+    function calc_score(score, axisMax) {
+        if (!axisMax) {
+            return 50;
+        }
+        var normalized = 50 + (score / axisMax) * 50;
+        return Math.max(0, Math.min(100, Math.round(normalized * 10) / 10));
     }
 
     function toBase64Url(value) {
@@ -134,15 +166,15 @@
 
     function results() {
         var scoreData = {
-            a: calc_score(scores[0]),
-            b: calc_score(scores[1]),
-            c: calc_score(scores[2]),
-            d: calc_score(scores[3]),
-            e: calc_score(scores[4]),
-            f: calc_score(scores[5]),
-            g: calc_score(scores[6]),
-            h: calc_score(scores[7]),
-            i: calc_score(scores[8])
+            a: calc_score(scores[0], axisMaxScores[0]),
+            b: calc_score(scores[1], axisMaxScores[1]),
+            c: calc_score(scores[2], axisMaxScores[2]),
+            d: calc_score(scores[3], axisMaxScores[3]),
+            e: calc_score(scores[4], axisMaxScores[4]),
+            f: calc_score(scores[5], axisMaxScores[5]),
+            g: calc_score(scores[6], axisMaxScores[6]),
+            h: calc_score(scores[7], axisMaxScores[7]),
+            i: calc_score(scores[8], axisMaxScores[8])
         };
         var payload = toBase64Url(JSON.stringify(scoreData));
         var signature = signPayload(payload);
