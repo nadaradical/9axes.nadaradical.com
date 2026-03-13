@@ -1,0 +1,47 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href='style.css?v=20260312b' rel='stylesheet' type='text/css'>
+<title>Como funciona - 9Axes</title>
+<link rel="icon" type="x-icon" href="icon.png">
+<link rel="shortcut icon" type="x-icon" href="icon.png">
+<meta charset="utf-8">
+</head>
+<body class="instructions-page">
+<div class="instructions-shell">
+    <section class="instructions-hero">
+        <h1>9Axes</h1>
+        <p class="instructions-subtitle">Como funciona o teste</p>
+        <p class="instructions-lead">Aqui encontras as instruções, o método de pontuação e a forma como o resultado final é apresentado.</p>
+    </section>
+
+    <section class="instructions-options">
+        <h2>1) Como responder</h2>
+        <p>Vais ver várias afirmações políticas. Em cada uma, escolhe uma opção entre <b>Concordo Fortemente</b>, <b>Concordo</b>, <b>Neutro/Indeciso</b>, <b>Discordo</b> e <b>Discordo Fortemente</b>.</p>
+        <p>Não há respostas certas ou erradas. O objetivo é medir proximidade ideológica, por isso o melhor é responder de forma espontânea e honesta.</p>
+    </section>
+
+    <section class="instructions-options">
+        <h2>2) Versão curta vs. completa</h2>
+        <p><b>Versão curta:</b> 72 perguntas (8 por eixo) para um resultado rápido.</p>
+        <p><b>Versão completa:</b> 216 perguntas (24 por eixo) para maior detalhe e estabilidade estatística.</p>
+    </section>
+
+    <section class="instructions-options">
+        <h2>3) Como os resultados são calculados</h2>
+        <p>Cada pergunta está associada a um dos nove eixos e tem um "peso" para os dois polos desse eixo. As tuas respostas convertem-se em pontos positivos ou negativos, de acordo com a intensidade de concordância.</p>
+        <p>No fim, os pontos são somados por eixo, normalizados para percentagem e mostrados em barras. Quanto mais alta a percentagem de um lado, maior a tua proximidade com esse polo ideológico.</p>
+        <p>Para encontrar a ideologia e o partido mais próximos, o 9Axes usa <b>distância euclidiana</b> entre o teu vetor de 9 eixos e cada perfil de referência (em vez de somar diferenças absolutas). Na prática, cada eixo entra como <code>(diferença)^2</code>, soma-se tudo e no final aplica-se raiz quadrada. Este método melhora a precisão da correspondência ideológica.</p>
+    </section>
+
+    <section class="instructions-options">
+        <h2>4) Como interpretar o resultado</h2>
+        <p>O resultado é um retrato de tendências, não um rótulo fixo. Posições intermédias são normais e indicam combinações ideológicas.</p>
+        <p>A página final também apresenta um resumo automático com a tua posição dominante em cada eixo para facilitar leitura e partilha.</p>
+    </section>
+
+    <div class="instructions-actions">
+        <button class="button button-option button-option-primary" onclick="location.href='instructions.html';">Escolher versão e começar</button>
+        <button class="button button-option button-option-danger" onclick="location.href='index.html';">Voltar à página inicial</button>
+    </div>
+</div>
+</body>

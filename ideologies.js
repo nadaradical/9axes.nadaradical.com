@@ -236,7 +236,201 @@ ideologies = [
             "scty": 40,
             "cult": 60
         }
+    },
+{
+    "name": "Minarquista",
+    "stats": {
+        "divi": 80,
+        "govt": 85,
+        "dipl": 85,
+        "mili": 20,
+        "prot": 15,
+        "econ": 10,
+        "reli": 80,
+        "scty": 60,
+        "cult": 25
     }
+},
+{
+    "name": "Liberal Clássico Conservador",
+    "stats": {
+        "divi": 60,
+        "govt": 65,
+        "dipl": 70,
+        "mili": 40,
+        "prot": 35,
+        "econ": 20,
+        "reli": 35,
+        "scty": 35,
+        "cult": 60
+    }
+},
+{
+    "name": "Liberal Progressista",
+    "stats": {
+        "divi": 60,
+        "govt": 60,
+        "dipl": 85,
+        "mili": 20,
+        "prot": 30,
+        "econ": 35,
+        "reli": 85,
+        "scty": 80,
+        "cult": 25
+    }
+},
+{
+    "name": "Social Liberal",
+    "stats": {
+        "divi": 60,
+        "govt": 55,
+        "dipl": 80,
+        "mili": 20,
+        "prot": 40,
+        "econ": 50,
+        "reli": 80,
+        "scty": 75,
+        "cult": 25
+    }
+},
+{
+    "name": "Conservador Liberal",
+    "stats": {
+        "divi": 40,
+        "govt": 45,
+        "dipl": 45,
+        "mili": 55,
+        "prot": 60,
+        "econ": 25,
+        "reli": 30,
+        "scty": 30,
+        "cult": 70
+    }
+},
+{
+    "name": "Nacional Liberal",
+    "stats": {
+        "divi": 35,
+        "govt": 40,
+        "dipl": 35,
+        "mili": 60,
+        "prot": 60,
+        "econ": 25,
+        "reli": 40,
+        "scty": 40,
+        "cult": 75
+    }
+},
+{
+    "name": "Nacional Conservador",
+    "stats": {
+        "divi": 20,
+        "govt": 25,
+        "dipl": 20,
+        "mili": 70,
+        "prot": 75,
+        "econ": 40,
+        "reli": 20,
+        "scty": 20,
+        "cult": 85
+    }
+},
+{
+    "name": "Socialista Libertário",
+    "stats": {
+        "divi": 85,
+        "govt": 85,
+        "dipl": 80,
+        "mili": 10,
+        "prot": 20,
+        "econ": 85,
+        "reli": 90,
+        "scty": 85,
+        "cult": 25
+    }
+},
+{
+    "name": "Sindicalista",
+    "stats": {
+        "divi": 70,
+        "govt": 70,
+        "dipl": 60,
+        "mili": 30,
+        "prot": 40,
+        "econ": 90,
+        "reli": 85,
+        "scty": 70,
+        "cult": 40
+    }
+},
+{
+    "name": "Socialista Nacional",
+    "stats": {
+        "divi": 20,
+        "govt": 20,
+        "dipl": 25,
+        "mili": 75,
+        "prot": 75,
+        "econ": 70,
+        "reli": 35,
+        "scty": 25,
+        "cult": 85
+    }
+},
+{
+    "name": "Autoritário Tecnocrata",
+    "stats": {
+        "divi": 35,
+        "govt": 20,
+        "dipl": 75,
+        "mili": 40,
+        "prot": 75,
+        "econ": 40,
+        "reli": 90,
+        "scty": 50,
+        "cult": 40
+    }
+},
+{
+    "name": "Conservador Tradicionalista",
+    "stats": {
+        "divi": 30,
+        "govt": 35,
+        "dipl": 40,
+        "mili": 55,
+        "prot": 65,
+        "econ": 45,
+        "reli": 15,
+        "scty": 15,
+        "cult": 75
+    }
+},
+{
+    "name": "Agrarista",
+    "stats": {
+        "divi": 60,
+        "govt": 45,
+        "dipl": 40,
+        "mili": 35,
+        "prot": 50,
+        "econ": 55,
+        "reli": 25,
+        "scty": 30,
+        "cult": 60
+    }
+},
+{
+    "name": "Verde Libertário",
+    "stats": {
+        "divi": 85,
+        "govt": 85,
+        "dipl": 85,
+        "mili": 5,
+        "prot": 20,
+        "econ": 60,
+        "reli": 95,
+        "scty": 85,
+        "cult": 25
+    }
+}
 ];
-results.html
-results.html

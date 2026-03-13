@@ -1,18 +1,27 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
-<link href='style.css' rel='stylesheet' type='text/css'>
-<title>Questionário - 9Axes</title>
+<link href='style.css?v=20260312b' rel='stylesheet' type='text/css'>
+<title>Escolher versão - 9Axes</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
 </head>
-<body>
+<body class="instructions-page">
+<div class="instructions-shell">
+    <section class="instructions-hero">
+        <h1>9Axes</h1>
+        <p class="instructions-subtitle">Escolhe a versão do teste</p>
+        <p class="instructions-lead">Se já sabes como funciona, escolhe abaixo a versão curta ou completa e começa já.</p>
+    </section>
 
-<h1>9Axes</h1>
-<hr>
-<h2 style="text-align:center;">Instruções para o teste</h2>
-<p class="question">Será apresentado uma série de afirmações e para cada uma clique no botão correspondente à sua opinião.</p>
-<button class="button" onclick="location.href='fullquiz.html';" style="background-color: #2196f3;">Dá-me a versão completa! (216 questões)</button><br>
-<button class="button" onclick="location.href='quiz.html';" style="background-color: #2196f3;">Percebido! Dá-me a versão mais curta! (45 questões)</button> <br>
-<button class="button" onclick="location.href='index.html';" style="background-color: #f44336;">Espera, esquece!</button> <br>
+    <section class="instructions-options">
+        <h2>Escolhe o teu ritmo</h2>
+        <p>Queres primeiro ler as explicações de método e de cálculo? Vê a página <a href="como-funciona.html">Como funciona o teste</a>. Se preferires, podes avançar já para as perguntas.</p>
+
+        <button class="button button-option button-option-primary" onclick="location.href='fullquiz.html';">Versão completa (216 questões)</button><br>
+        <button class="button button-option button-option-secondary" onclick="location.href='quiz.html';">Versão curta (72 questões)</button><br>
+        <button class="button button-option" onclick="location.href='como-funciona.html';">Ler como os resultados são calculados</button><br>
+        <button class="button button-option button-option-danger" onclick="location.href='index.html';">Voltar à página inicial</button><br>
+    </section>
+</div>
 </body>

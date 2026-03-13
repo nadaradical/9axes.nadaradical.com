@@ -1,365 +1,365 @@
 questions = 
-    [[//Descentralização-Centralização`
+    [[//Descentralização-Centralização
         [//4
-            "Não há necessidade de um Governo central.",
-            "As regiões devem ter os seus próprios militares.", 
-            "As leis das autarquias devem ter precedência sobre as leis nacionais."
+            "Portugal deveria ser um Estado federal com regiões altamente autónomas.",
+            "As regiões devem ter autonomia quase total para definir as suas políticas.",
+            "O Governo central deveria ter muito menos poder do que as regiões."
         ],
         [//3
-            "As leis locais devem ser antepostas sobre as leis nacionais.",
-            "O Governo central não consegue entender as necessidades do seu povo.",
-            "As pessoas devem mais lealdade às suas regiões do que ao seu país."
+            "Portugal deveria criar regiões administrativas com poderes fortes.",
+            "As regiões devem controlar grande parte das suas políticas públicas.",
+            "O poder político deveria ser transferido de Lisboa para as regiões."
         ],
         [//2
-            "É necessário um aumento de poder dos governos locais.",
-            "As leis devem variar de área para área e de cultura para cultura dentro de um país.",
-            "É uma boa ideia testar uma política numa autarquia em vez de implementá-la em todo o país de imediato."
+            "As autarquias deveriam ter mais autonomia para tomar decisões locais.",
+            "As regiões deveriam poder adaptar políticas nacionais à sua realidade.",
+            "Mais competências deveriam ser transferidas para os governos locais."
             
         ],
         [//1
-            "Os Governos locais têm um melhor entendimento dos seus cidadãos do que o Governo central.",
-            "Os Governos locais tratam de questões que o Governo central nunca trataria.",
-            "Os Governos locais dão a cada região uma boa representação dos seus pontos de vista."
+            "Os governos locais normalmente compreendem melhor os problemas da sua região.",
+            "A descentralização pode melhorar a eficácia das políticas públicas.",
+            "As autarquias devem ter algum grau de autonomia para decidir prioridades locais."
         ],
         [//-1
-            "Um país não pode funcionar sem um Governo central.",
-            "O Governo central protege as minorias melhor do que certos Governos locais.",
-            "Certas questões não devem ser abordadas localmente."
+            "O Governo central deve manter controlo sobre decisões importantes.",
+            "Algumas políticas devem ser iguais em todo o país.",
+            "O Estado central garante igualdade entre regiões."
         ],
         [//-2
-            "O Governo central precisa de mais poder.",
-            "As subdivisões não se devem poder isentar das leis nacionais.",
-            "As pessoas devem pensar em si mesmas como cidadãos da sua Nação, e não do seu Estado."
+            "O Governo central deveria ter mais poder sobre as autarquias.",
+            "As regiões não devem poder contrariar leis nacionais.",
+            "Demasiada autonomia regional pode criar desigualdades."
         ],
         [//-3
-            "Um grupo de regiões sem um Governo central forte é apenas uma aliança, não uma nação.",
-            "Um Governo central deve ser forte para proteger adequadamente todos os seus cidadãos.",
-            "As autarquias não podem funcionar sem um Governo central forte."
+            "Portugal precisa de um Governo central forte para funcionar bem.",
+            "As políticas públicas devem ser definidas principalmente a nível nacional.",
+            "Autonomias regionais fortes enfraquecem a unidade nacional."
         ],
         [//-4
-            "Não há necessidade de governos locais ou centrais.",
-            "As leis devem ser completamente consistentes em todas as regiões de uma Nação.",
-            "Estados fortes enfraquecem uma Nação."
-        ]],[//Democratico-Autoritário`
+            "Portugal deve ser governado de forma altamente centralizada.",
+            "As regiões não devem ter autonomia política significativa.",
+            "Um Governo central forte deve controlar quase todas as decisões importantes."
+        ]],[//Democratico-Autoritário
         [//4
-            "Democracia direta é a forma mais eficaz de governar.",
-            "As pessoas devem votar em cada assunto individualmente.",
-            "Os representantes raramente representam bem a Nação."
+            "A democracia direta deveria ser usada com muito mais frequência em Portugal.",
+            "Os cidadãos deveriam poder revogar mandatos de políticos através de votação.",
+            "As decisões políticas importantes deveriam ser tomadas diretamente pelos cidadãos."
         ],
         [//3
-            "É importante que o governo siga a opinião da maioria, mesmo quando errada.",
-            "A quantas mais pessoas perguntarem, maior é a chance de chegar à melhor decisão.",
-            "Ninguém para além de mim pode representar adequadamente os meus pontos de vista."
+            "Referendos nacionais deveriam ser usados com mais frequência.",
+            "O Governo deve seguir a vontade da maioria sempre que possível.",
+            "A participação direta dos cidadãos deve ter mais peso nas decisões políticas."
         ],
         [//2
-            "As eleições são uma forma eficaz de mostrar a aprovação do governo.",
-            "A democracia é a pior forma de governo, exceto todas as outras que tentamos.",
-            "Cada pessoa deve ter um voto, cada um igual ao outro."
+            "As eleições livres são essenciais para a legitimidade de um governo.",
+            "Todos os cidadãos devem ter o mesmo peso no processo democrático.",
+            "O poder político deve vir do voto popular."
         ],
         [//1
-            "A democracia é mais do que um mero processo de tomada de decisões.",
-            "As pessoas devem ter o poder de escolher os seus líderes.",
-            "O governo deve ser do povo para o povo."
+            "A democracia é a melhor forma de governo disponível.",
+            "Os cidadãos devem poder escolher livremente os seus líderes.",
+            "Governos devem prestar contas aos eleitores."
         ],
         [//-1
-            "Quanto mais forte o líder, melhor a liderança.",
-            "A opinião popular nem sempre está certa.",
-            "Os líderes devem ser fortes ou a Nação sofrerá."
+            "Em certas situações, um líder forte pode ser mais eficaz do que processos democráticos.",
+            "A opinião popular nem sempre leva às melhores decisões.",
+            "O Governo deve tomar decisões difíceis mesmo contra a opinião pública."
         ],
         [//-2
-             "Um Governo central rigidamente hierárquico é o melhor caminho para a manutenção da ordem.",
-             "A sociedade não poderia funcionar sem líderes nem seguidores.",
-             "A democracia torna muito fácil a promoção das maiorias às custas das minorias."
+             "Um governo forte é mais importante do que um processo democrático lento.",
+             "A estabilidade política pode justificar limitar certos processos democráticos.",
+             "Líderes experientes devem ter mais poder de decisão do que a população em geral."
         ],
         [//-3
-            "A população em geral faz decisões péssimas.",
-            "É importante que coloquemos os interesses do nosso grupo ideológico acima de todos os demais.",
-            "A opinião pública oscila demais com eventos emocionais para ser útil na formulação de políticas."
+            "As massas são frequentemente mal informadas para tomar boas decisões políticas.",
+            "Demasiada democracia pode levar à instabilidade.",
+            "Algumas decisões políticas deveriam ser tomadas por especialistas em vez do povo."
         ],
         [//-4
-            "As eleições são um desperdício de recursos.",
-            "Ceder à opinião popular é prejudicial para uma nação.",
-            "Uma Nação deve obedecer à sua liderança sem a questionar."
-        ]],[//Globalista-Isolacionista`
+            "As eleições não são necessárias para governar um país.",
+            "Os cidadãos devem obedecer às decisões da liderança sem questionar.",
+            "Um governo forte não deve depender da opinião pública."
+        ]],[//Globalista-Isolacionista
         [//4
-            "Um governo mundial unido seria algo benéfico para a humanidade.",
-            "Somos, antes de mais, cidadãos da Terra.",
-            "Para que a humanidade sobreviva, precisamos de deixar de ter nações separadas."
+            "A integração internacional é essencial para o futuro da humanidade.",
+            "As instituições internacionais deveriam ter mais poder para resolver problemas globais.",
+            "Os países devem cooperar cada vez mais para enfrentar desafios globais."
         ],
         [//3
-            "A ONU (Organização das Nações Unidas) precisa de mais poder.",
-            "A ONU  deve ter um exército para fazer cumprir as suas resoluções",
-            "Ter nações independentes com o risco de conflito global cria uma grande ameaça para a humanidade como um todo."
+            "A União Europeia deveria ter mais competências políticas.",
+            "A cooperação internacional é essencial para resolver problemas globais.",
+            "Portugal deve participar ativamente em organizações internacionais."
         ],
         [//2
-            "Eu apoio organizações internacionais, como a União Europeia.",
-            "Governos devem ser responsáveis pela comunidade internacional.",
-            "Nações que lutam entre si atrapalham o caminho para o progresso."
+            "Portugal beneficia por fazer parte da União Europeia.",
+            "O comércio internacional traz benefícios para todos os países.",
+            "A cooperação entre nações promove estabilidade e prosperidade."
         ],
         [//1
-            "O comércio internacional é benéfico.",
-            "Alianças são importantes para a proteção de uma Nação.",
-            "As Nações devem cooperar sempre que há benefício para ambas."
+            "Alianças internacionais ajudam a proteger os interesses nacionais.",
+            "A diplomacia internacional é importante para manter a paz.",
+            "Os países devem trabalhar juntos quando têm interesses comuns."
         ],
         [//-1
-            "É muito importante manter a soberania nacional.",
-            "A minha nação está mais próxima das minhas ideologias do que a maioria das Nações do mundo.",
-            "Tenho orgulho de estar no meu país."
+            "A soberania nacional deve ter prioridade sobre decisões internacionais.",
+            "Portugal deve proteger os seus interesses nacionais antes de compromissos internacionais.",
+            "Algumas decisões importantes devem ser tomadas apenas a nível nacional."
         ],
         [//-2
-            "O apoio financeiro aos países necessitados é um desperdício de dinheiro.",
-            "Alianças podem representar uma ameaça à soberania de uma Nação.",
-            "É importante proteger a cultura nacional."
+            "A União Europeia tem demasiado poder sobre os países membros.",
+            "Portugal deveria ter mais independência em relação a organizações internacionais.",
+            "A globalização tem prejudicado a soberania dos países."
         ],
         [//-3
-            "A minha nação deve ficar de fora dos assuntos internacionais.",
-            "A ONU (Organização das Nações Unidas) deve ser abolida.",
-            "Ninguém, noutros países, tem os nossos melhores interesses em mente."
+            "Portugal deve evitar envolver-se demasiado em assuntos internacionais.",
+            "As organizações internacionais interferem demasiado na política nacional.",
+            "Cada país deve resolver os seus próprios problemas sem interferência externa."
         ],
         [//-4
-            "Diplomacia só prejudica as nações.",
-            "Leis internacionais não deveriam existir.",
-            "Não devemos concordar com qualquer acordo feito por outro país."
-        ]],[//Militarista-Pacifista`
+            "As alianças internacionais limitam a independência dos países.",
+            "Portugal deveria afastar-se de organizações internacionais.",
+            "Os países devem evitar compromissos internacionais que limitem a sua soberania."
+        ]],[//Militarista-Pacifista
         [//4
-            "A guerra é necessária para fazer a economia prosperar.",
-            "Um estado constante de guerra beneficia um país.",
-            "Apenas aqueles que servem nas forças armadas devem ter influência sobre quem está no poder."
+            "Portugal deve aumentar significativamente o orçamento das Forças Armadas.",
+            "Uma nação deve estar sempre preparada para usar força militar para defender os seus interesses.",
+            "As Forças Armadas devem ter um papel central na segurança nacional."
         ],
         [//3
-            "Devia haver serviço militar obrigatório.",
-            "Os países que não correspondem aos nossos interesses devem ser derrubados.",
-            "Apenas aqueles que serviram nas forças armadas devem capazes de ganhar poder no governo."
+            "Portugal deve investir mais em capacidades militares modernas.",
+            "A presença militar forte ajuda a garantir estabilidade internacional.",
+            "As Forças Armadas devem participar ativamente em missões internacionais."
         ],
         [//2
-            "A ação militar preventiva por parte da Nação é por vezes necessária para protegê-la.",
-            "Os países que não respeitam os direitos humanos devem ser derrubados.",
-            "Uma opção militar deve sempre ser considerada."
+            "Portugal deve manter forças armadas fortes e bem equipadas.",
+            "Uma opção militar deve estar sempre disponível para defender o país.",
+            "As alianças militares são importantes para a segurança nacional."
         ],
         [//1
-            "Um governo deve manter um exército forte para se defender.",
-            "Uma nação normalmente precisa de um exército para sobreviver.",
-            "Devemos respeitar aqueles que serviram nas forças armadas."
+            "Um país precisa de forças armadas para se proteger.",
+            "Devemos respeitar aqueles que servem nas forças armadas.",
+            "A defesa nacional é uma responsabilidade importante do Estado."
         ],
         [//-1
-            "É mais importante manter relações pacíficas com os demais países do que aumentar a força militar.",
-            "Opções diplomáticas devem ser sempre tentadas antes de opções militares serem consideradas.",
-            "Paz é preferível à guerra sempre que possível."
+            "A diplomacia deve ser preferida à ação militar sempre que possível.",
+            "Evitar conflitos armados deve ser uma prioridade.",
+            "A cooperação internacional pode prevenir guerras."
         ],
         [//-2
-            "Mesmo ao protestar contra um governo autoritário, a violência não é aceitável.",
-            "Paz duradoura leva-nos à prosperidade.",
-            "A guerra normalmente leva aos piores dos resultados."
+            "O investimento militar deveria ser reduzido para financiar serviços públicos.",
+            "A guerra normalmente traz mais problemas do que soluções.",
+            "Os países devem evitar usar força militar no estrangeiro."
         ],
         [//-3
-            "Gastos militares são um desperdício de dinheiro.",
-            "Não temos o direito de intervir militarmente noutras nações.",
-            "Países desmoronam com guerra constante."
+            "As despesas militares são frequentemente um desperdício de recursos.",
+            "As nações não devem intervir militarmente noutros países.",
+            "A resolução pacífica de conflitos deve ser sempre priorizada."
         ],
         [//-4
-            "Guerra nunca é justíficada.",
-            "Na era moderna, os militares não são realmente necessários.",
-            "As nações não devem manter um exército."
-        ]],[//Segurança-Liberdade`
+            "A guerra nunca é justificável.",
+            "As forças armadas não deveriam ter um papel importante na política internacional.",
+            "Os países deveriam abolir os seus exércitos permanentes."
+        ]],[//Segurança-Liberdade
         [//4
-            "Aqueles que discordam com o governo devem ser removidos do país.",
-            "O Governo deve monitorar todos os cidadãos para poder combater o terrorismo.",
-            "As pessoas não devem ter proteções que possam impedir a descoberta da sua atividade criminosa."
+            "O Governo deve poder monitorizar comunicações para prevenir terrorismo.",
+            "Câmaras de vigilância devem ser amplamente usadas nas cidades.",
+            "A segurança pública deve ter prioridade sobre a privacidade."
         ],
         [//3
-            "A polícia precisa de mais poder e proteção.",
-            "É muito importante a manutenção da lei e da ordem.",
-            "Um país deve utilizar quaisquer medidas para reforçar as suas leis."
+            "A polícia precisa de mais poderes para combater o crime.",
+            "O Estado deve poder recolher dados digitais para investigações.",
+            "A vigilância estatal pode ser necessária para garantir segurança."
         ],
         [//2
-            "Se não tens nada a esconder, não te deves preocupar com o governo ter acesso às tuas comunicações.",
-            "O sacrifício de algumas liberdades civis é necessário para nos proteger dos atos de terrorismo.",
-            "A vigilância governamental é necessária no mundo moderno."
+            "Algumas liberdades devem ser limitadas para manter a ordem pública.",
+            "A polícia deve ter mais autoridade para combater criminalidade.",
+            "A segurança da sociedade é mais importante do que certas liberdades individuais."
         ],
         [//1
-            "O Governo deve ter acesso aos e-mails de suspeitos de terrorismo.",
-            "É necessário renunciar algumas liberdades para manter as pessoas seguras.",
-            "A liberdade absoluta torna uma sociedade perigosa."
+            "Alguma vigilância governamental é aceitável para manter segurança.",
+            "A polícia deve ter ferramentas modernas para combater o crime.",
+            "A liberdade absoluta pode tornar uma sociedade perigosa."
         ],
         [//-1
-            "A canábis deve ser legalizada.",
-            "As pessoas devem ter liberdade sempre, mesmo que possa causar um pouco de risco à segurança das pessoas.",
-            "O Governo não tem direito de olhar para a vida pessoal da maioria das pessoas."
+            "O Estado não deve interferir na vida privada sem forte justificação.",
+            "A liberdade individual deve ser uma prioridade política.",
+            "A privacidade dos cidadãos deve ser protegida."
         ],
         [//-2
-            "O aborto deve ser legal em todos os casos.",
-            "A polícia deve ser ainda mais regulamentada.",
-            "Toda a autoridade deve ser questionada."
+            "O reconhecimento facial pelo Estado deve ser proibido.",
+            "A polícia deve ser mais controlada por mecanismos independentes.",
+            "A vigilância estatal ameaça as liberdades individuais."
         ],
         [//-3
-            "Crimes sem vítimas (como o uso de drogas) não deveriam ser responsabilidade policial.",
-            "A legalização do uso pessoal de drogas leves é bem-vinda.",
-            "Os denunciantes devem ser fortemente protegidos."
+            "O Governo não deve recolher dados pessoais em massa.",
+            "A privacidade digital deve ser fortemente protegida.",
+            "A polícia tem demasiado poder na sociedade moderna."
         ],
         [//-4
-            "A própria existência do Estado é uma ameaça à liberdade.",
-            "Não deve haver força policial.",
-            "A liberdade das pessoas não deve ter limites."
-        ]],[//Intervencionismo-Livre_Mercado`
+            "A vigilância estatal nunca deve ser permitida.",
+            "A existência do Estado representa um risco para a liberdade individual.",
+            "A liberdade individual deve ser praticamente ilimitada."
+        ]],[//Intervencionismo-Livre_Mercado
         [//4
-            "O comunismo, se implementado corretamente, seria uma boa forma de economia.",
-            "A cada qual segundo a sua capacidade; a cada qual segundo as suas necessidades.",
-            "Igualdade de resultado é importante."
+            "O Estado deve controlar os preços da habitação para garantir casas acessíveis.",
+            "O Governo deve nacionalizar setores estratégicos como energia ou transportes.",
+            "A riqueza deve ser redistribuída agressivamente para reduzir desigualdades."
         ],
         [//3
-            "A opressão por parte das corporações é um problema mais grave do que a opressão por parte dos governos.",
-            "Portugal deve aumentar os impostos sobre os ricos para fornecer para os pobres.",
-            "Áreas e serviços de utilidade pública, como estradas e eletricidade, devem ser propriedade do Estado."
+            "Os impostos sobre os mais ricos devem aumentar significativamente.",
+            "Serviços essenciais como saúde, energia e transportes devem ser públicos.",
+            "O Estado deve intervir diretamente para reduzir desigualdades económicas."
         ],
         [//2
-            "Eu apoio um sistema único e universal de saúde.",
-            "Os ricos têm muito mais do que precisam.",
-            "Coisas básicas necessárias para viver, como cuidados de saúde, são direitos dos cidadãos."
+            "O Governo deve regular o mercado da habitação.",
+            "O Serviço Nacional de Saúde deve ser prioritariamente público.",
+            "Grandes empresas devem pagar mais impostos do que atualmente."
         ],
         [//1
-            "É necessário que o Governo intervenha na economia para proteger os consumidores.",
-            "As pessoas devem ter a mesma oportunidade de ter sucesso.",
-            "Pessoas nascidas de famílias ricas têm sucesso injusto, mesmo quando não são qualificadas e não trabalham arduamente."
+            "O Estado deve regular empresas para proteger consumidores e trabalhadores.",
+            "Alguma intervenção estatal na economia é necessária.",
+            "A economia deve ter menos intervenção estatal."
         ],
         [//-1
-            "As pessoas devem ter o direito de deixar a sua riqueza para os seus descendentes.",
-            "Uma intervenção excessiva do Estado no Mercado é um risco à economia.",
-            "Economias sem capitalismo entrarão em colapso."
+            "As empresas privadas normalmente gerem recursos melhor do que o Estado.",
+            "Impostos elevados prejudicam o crescimento económico.",
+            "A economia deve ter menos intervenção estatal."
         ],
         [//-2
-            "É melhor manter um orçamento equilibrado do que garantir o bem-estar de todos os cidadãos.",
-            "O capitalismo é melhor do que qualquer alternativa existente.",
-            "A indústria que é propriedade do governo normalmente é uma má ideia."
+            "Empresas públicas devem ser privatizadas sempre que possível.",
+            "Reduzir impostos ajuda a economia a crescer.",
+            "O Estado interfere demasiado na economia."
         ],
         [//-3
-            "Quanto mais livre é o mercado, mais livres são as pessoas.",
-            "As pessoas devem trabalhar para qualquer coisa que conseguirem.",
-            "Os pobres escolhem ser pobres."
+            "O mercado livre resolve problemas económicos melhor do que o Governo.",
+            "O Estado não deve interferir no funcionamento das empresas.",
+            "A competição de mercado deve ser quase totalmente livre."
         ],
         [//-4
-            "O Governo não deve regular a economia de todo.",
-            "O verdadeiro livre mercado deve permitir que as multinacionais predadoras criem monopólios.",
-            "Quem não trabalha não deve receber apoio do Estado."
-        ]],[//Secular-Religioso`
+            "O Estado não deve intervir na economia.",
+            "Impostos são essencialmente uma forma de coerção estatal.",
+            "O mercado deve funcionar completamente sem regulação."
+        ]],[//Secular-Religioso
         [//4
-            "A religião deve ser banida.",
-            "A fé é algo completamente absurdo.",
-            "A religião deve declinar para a sociedade progredir."
+            "O Estado deve ser completamente laico e não reconhecer qualquer religião.",
+            "A religião não deve ter qualquer influência na política.",
+            "As instituições públicas devem ser totalmente separadas de qualquer religião."
         ],
         [//3
-            "Roupas religiosas devem ser banidas do público.",
-            "Não há poder superior.",
-            "O Governo não deve financiar nenhuma organização religiosa."
+            "O Governo não deve financiar organizações religiosas.",
+            "A religião deve ser mantida fora das decisões políticas.",
+            "O Estado deve tratar todas as religiões de forma estritamente neutra."
         ],
         [//2
-            "Eu apoio o casamento gay.",
-            "Todas as religiões devem ser encaradas igualmente pelo Governo.",
-            "A religião deve ser removida de tudo o que está ligado ao Governo."
+            "As leis devem basear-se apenas em princípios seculares.",
+            "A religião deve permanecer uma questão privada.",
+            "O Estado deve manter uma separação clara entre Igreja e política."
         ],
         [//1
-            "A religião não pertence ao Governo.",
-            "As leis não devem ser baseadas na religião.",
-            "Deve haver uma separação entre Igreja e Estado."
+            "A religião não deve influenciar diretamente as leis.",
+            "O Estado deve ser neutro em relação às crenças religiosas.",
+            "A separação entre Igreja e Estado é importante."
         ],
         [//-1
-            "Eu acredito que há algo após a morte.",
-            "A religião é benéfica para a sociedade.",
-            "As pessoas devem ter permissão para seguir uma religião."
+            "A religião pode contribuir positivamente para a sociedade.",
+            "As pessoas devem poder expressar publicamente a sua fé.",
+            "Os valores religiosos podem inspirar decisões pessoais e sociais."
         ],
         [//-2
-            "Eu acredito num poder superior.",
-            "As organizações religiosas normalmente oferecem melhor assistência aos pobres em relação ao Governo.",
-            "É importante que a escola de meu filho incuta valores religiosos."
+            "A religião desempenha um papel importante na cultura de um país.",
+            "As organizações religiosas ajudam frequentemente os mais necessitados.",
+            "Os valores religiosos podem ser uma base moral importante para a sociedade."
         ],
         [//-3
-            "A religião normalmente fornece a verdade.",
-            "Os meus valores religiosos precisam de ser disseminados tanto quanto for possível.",
-            "Sexo fora do casamento é imoral."
+            "A religião deve ter maior influência na vida pública.",
+            "As instituições religiosas devem ter um papel relevante na educação.",
+            "Os valores religiosos devem orientar mais a sociedade."
         ],
         [//-4
-            "Teocracia é um bom sistema de Governo.",
-            "O governo deve apoiar e reconhecer apenas uma religião.",
-            "A maioria das coisas más que acontecem no mundo são causadas pelo afastamento da religião."
-        ]],[//Progressista-Conservador`
+            "O Governo deve promover ativamente valores religiosos.",
+            "A sociedade deve seguir princípios religiosos tradicionais.",
+            "O Estado deve apoiar oficialmente uma religião dominante."
+        ]],[//Progressista-Conservador
         [//4
-            "Se a IA pudesse governar de forma mais eficaz que os humanos, a IA deveria governar.",
-            "A modificação genética é uma força para o bem, mesmo em humanos.",
-            "A tradição apenas atrapalha o progresso da tecnologia."
+            "A sociedade deve abraçar mudanças sociais mesmo que desafiem tradições antigas.",
+            "A ciência e a tecnologia devem guiar as decisões políticas.",
+            "O progresso social exige questionar normas culturais antigas."
         ],
         [//3
-            "A automação em geral é extremamente boa para a sociedade.",
-            "Tradições não têm valor por si só.",
-            "Como as pessoas sofreram com o desenvolvimento de uma certa tecnologia, devemos usar essa mesma tecnologia."
+            "A igualdade de direitos para minorias deve ser uma prioridade política.",
+            "A sociedade deve adaptar-se rapidamente às mudanças culturais.",
+            "O progresso social normalmente melhora a qualidade de vida."
         ],
         [//2
-            "Deveríamos fazer um esforço para colocar uma pessoa em Marte num futuro próximo.",
-            "Usar animais para testar a segurança de drogas, vacinas, dispositivos médicos e cosméticos é ético.",
-            "O progresso tecnológico é normalmente bom."
+            "A sociedade deve evoluir com base em novos conhecimentos científicos.",
+            "As mudanças sociais são uma parte natural do progresso.",
+            "As instituições devem adaptar-se a novos valores sociais."
             
         ],
         [//1
-            "As mudanças climáticas causadas por seres humanos são atualmente uma das maiores ameaças ao nosso modo de vida.",
-            "Regulações ambientais são essenciais para assegurar o futuro de nossos filhos e netos.",
-            "Um mundo melhor surgirá do avanço da automação, da ciência e da tecnologia."
+            "A sociedade deve equilibrar tradição e mudança.",
+            "Algumas tradições devem ser repensadas ao longo do tempo.",
+            "O progresso social pode trazer benefícios importantes."
         ],
         [//-1
-            "Perseguir o progresso a todo custo é perigoso.",
-            "A tecnologia nem sempre é benéfica.",
-            "Tradições são importantes."
+            "Tradições culturais devem ser preservadas.",
+            "Mudanças sociais demasiado rápidas podem ser prejudiciais.",
+            "Os valores familiares tradicionais são importantes para a sociedade."
         ],
         [//-2
-            "A tecnologia está a afetar negativamente a sociedade moderna.",
-            "As touradas devem ser preservadas devido ao seu caráter cultural e tradicional.",
-            "Manter os valores da família é essencial."
+            "A sociedade moderna está a abandonar valores importantes.",
+            "Devemos proteger tradições culturais mesmo quando são criticadas.",
+            "As instituições tradicionais são fundamentais para estabilidade social."
         ],
         [//-3
-            "A nossa sociedade era melhor e mais segura há décadas.",
-            "É importante mantermos as nossas tradições.",
-            "Os mais velhos sabem o melhor caminho para a sociedade."
+            "A sociedade era mais estável no passado.",
+            "A tradição deve ser priorizada em relação a mudanças sociais.",
+            "Os valores culturais tradicionais devem ser preservados."
         ],
         [//-4
-            "Os medicamentos tradicionais são frequentemente mais eficazes do que os medicamentos modernos.",
-            "A Internet deve ser proibida.",
-            "Deveriamos voltar a um modo de vida básico sem as conveniências modernas."
-        ]],[//Assimilacionista-Multiculturalista`
+            "A sociedade moderna afastou-se demasiado das tradições.",
+            "O progresso social frequentemente destrói valores importantes.",
+            "Devemos regressar a valores sociais mais tradicionais."
+        ]],[//Assimilacionista-Multiculturalista
         [//4
-            "Os estrangeiros nunca devem entrar no meu país.",
-            "Não devemos permitir refugiados.",
-            "Apenas as línguas nacionais deviam ser faladas no país."
+            "Imigrantes devem adaptar-se completamente à cultura do país de acolhimento.",
+            "A cultura nacional deve ser preservada acima de influências externas.",
+            "A integração cultural deve ser uma prioridade para imigrantes."
         ],
         [//3
-            "Apenas no caso de imenso talento os imigrantes devem ter permissão para entrar no país.",
-            "Se aceitarmos os migrantes de todo, é importante que eles se integrem na nossa cultura.",
-            "Os imigrantes nunca irão realmente adaptar-se ao nosso modo de vida."
+            "Imigrantes devem aprender a língua e costumes locais rapidamente.",
+            "É importante proteger a identidade cultural nacional.",
+            "A imigração deve exigir adaptação cultural."
         ],
         [//2
-            "Em geral, os imigrantes são péssimos para o país.",
-            "É importante proteger a cultura de uma nação.",
-            "Imigrantes ilegais não têm benefícios."
+            "A integração cultural é importante para a coesão social.",
+            "Imigrantes devem respeitar os valores do país de acolhimento.",
+            "A cultura nacional deve ter prioridade no espaço público."
         ],
         [//1
-            "Imigrantes ilegais devem ser deportados na maioria ou em todos os casos.",
-            "É de esperar que os imigrantes aprendam o idioma do país de acolhimento.",
-            "A proteção de fronteiras é importante."
+            "É razoável esperar que imigrantes aprendam a língua local.",
+            "A proteção da cultura nacional é importante.",
+            "A imigração deve ser acompanhada de políticas de integração."
         ],
         [//-1
-            "Deveríamos receber mais refugiados.",
-            "Os imigrantes são um líquido positivo.",
-            "Eu gosto de algumas culturas estrangeiras."
+            "A diversidade cultural pode enriquecer a sociedade.",
+            "A imigração pode trazer novas ideias e perspetivas.",
+            "A convivência entre culturas diferentes é positiva."
         ],
         [//-2
-            "Nenhuma cultura é superior a outra.",
-            "Deveríamos aceitar mais as outras culturas.",
-            "Todas as sociedades são uma mistura de culturas."
+            "Uma sociedade multicultural pode ser mais dinâmica.",
+            "A diversidade cultural deve ser valorizada.",
+            "As culturas devem coexistir livremente dentro de um país."
         ],
         [//-3
-            "Todos devem falar pelo menos duas línguas.",
-            "Todos os seres humanos compartilham uma identidade comum.",
-            "A nossa cultura seria melhorada com a adição de outras em si mesma."
+            "A mistura cultural melhora a sociedade.",
+            "A diversidade cultural deve ser encorajada.",
+            "As sociedades modernas são naturalmente multiculturais."
         ],	
         [//-4
-            "Os governos devem ser tão preocupados com os cidadãos estrangeiros quanto com os que estão dentro das suas fronteiras.",
-            "Quem quiser entrar no país deve poder fazê-lo livremente.",
-            "Os benefícios das fronteiras abertas superariam os custos."
+            "As fronteiras culturais não deveriam limitar a convivência humana.",
+            "As culturas devem misturar-se livremente.",
+            "A diversidade cultural global beneficia toda a humanidade."
         ]
     ]];

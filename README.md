@@ -1,33 +1,91 @@
-# 9axes.nadaradical.com
-O 9Axes é um teste de coordenadas políticas simples que te ajuda a descobrir o teu posicionamento — mesmo que não concordes com o resultado.
-O questionário apresenta várias afirmações e pede apenas que o utilizador indique o seu nível de concordância ou discordância.
-No final, o site estima o peso relativo das tuas opiniões dentro de nove eixos ideológicos.
+# 9Axes (PT) — Teste de Coordenadas Políticas
 
-Os valores políticos individuais são medidos nesses nove eixos. Em cada eixo existem dois polos opostos:
-* Separatismo vs. Unitarismo
-* Anarquismo vs. Autoritarismo
-* Globalismo vs. Isolacionismo
-* Militarismo vs. Pacifismo
-* Controlo vs. Liberdade
-* Intervencionismo vs. Livre Mercado
-* Secularismo vs. Religioso
-* Progressismo vs. Conservadorismo
-* Monoculturalismo vs. Multiculturalismo
+O **9Axes** é um teste político em português que estima o teu posicionamento ideológico em **nove eixos**.  
+O objetivo é simples: responder a um conjunto de afirmações e obter um retrato visual das tuas tendências políticas.
 
-## O que pode ser melhorado (ideias para “improvisar” mais)
-1. **Explicações pós-resultado por eixo**
-   * Mostrar uma interpretação curta para cada eixo (ex.: “Tendes para X por causa de respostas Y e Z”).
-2. **Perfis de comparação**
-   * Permitir comparar o resultado com partidos próximos.
-3. **Partilha visual melhorada**
-   * Gerar automaticamente um cartão de resultado (imagem) pronto para redes sociais.
-4. **Modo rápido adaptativo**
-   * Saltar perguntas com baixa relevância estatística com base nas respostas anteriores.
-5. **Histórico pessoal opcional**
-   * Guardar resultados por data para acompanhar mudanças de opinião ao longo do tempo.
-6. **Perguntas com melhor equilíbrio linguístico**
-   * Rever a redação para reduzir ambiguidade e enviesamento ideológico involuntário.
-7. **Acessibilidade e UX**
-   * Melhorar contraste, navegação por teclado, e experiência em ecrãs pequenos.
-8. **Perfil de Resultados de Políticos**
-   * Ter uma página em que apresenta os perfis de políticos que tenham feito o teste para que as pessoas consigam comparar resultados.
+🔗 **Site oficial:** [https://9axes.nadaradical.com](https://9axes.nadaradical.com)
+
+---
+
+## Sobre o projeto
+
+Este repositório contém a versão web estática do 9Axes, incluindo:
+- páginas do questionário;
+- cálculo dos resultados;
+- visualização gráfica por eixo;
+- perfis de comparação política.
+
+É um projeto leve (HTML, CSS e JavaScript), sem dependências de build obrigatórias para execução básica.
+
+---
+
+## Os 9 eixos ideológicos
+
+Cada resultado é distribuído entre dois polos opostos:
+
+1. **Separatismo** ↔ **Unitarismo**
+2. **Anarquismo** ↔ **Autoritarismo**
+3. **Globalismo** ↔ **Isolacionismo**
+4. **Militarismo** ↔ **Pacifismo**
+5. **Controlo** ↔ **Liberdade**
+6. **Intervencionismo** ↔ **Livre Mercado**
+7. **Secularismo** ↔ **Religioso**
+8. **Progressismo** ↔ **Conservadorismo**
+9. **Monoculturalismo** ↔ **Multiculturalismo**
+
+---
+
+## Como usar
+
+### Online
+
+A forma mais simples é usar a versão publicada:  
+👉 [https://9axes.nadaradical.com](https://9axes.nadaradical.com)
+
+### Localmente
+
+Como o projeto é estático, podes abrir diretamente o `index.html` no browser.  
+Se preferires correr com servidor local:
+
+```bash
+python3 -m http.server 8080
+```
+
+Depois abre: `http://localhost:8080`
+
+---
+
+## Estrutura principal
+
+- `index.html` — página inicial
+- `quiz.html` / `fullquiz.html` — versões do questionário
+- `results.html` — página de resultados
+- `questions.js` — perguntas e pesos
+- `ideologies.js` / `parties.js` — mapeamentos ideológicos e comparações
+- `style.css` — estilos globais
+
+---
+
+## Hospedagem e domínio
+
+O site está hospedado como página estática e publicado no domínio personalizado:
+
+- **Domínio:** `9axes.nadaradical.com`
+- **URL pública:** `https://9axes.nadaradical.com`
+- **Configuração de domínio:** ficheiro `CNAME`
+
+---
+
+## Licença
+
+Este projeto é distribuído sob a licença **MIT**, herdada do projeto original **8values**.
+
+Para mais detalhes, consulta o ficheiro [LICENSE](LICENSE).
+
+---
+
+## Créditos
+
+- Baseado no projeto original **8values**.
+- Adaptação e localização para português no contexto do 9Axes.
+
