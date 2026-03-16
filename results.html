@@ -5,6 +5,17 @@
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
+<meta property="og:title" content="Resultados - 9Eixos">
+<meta property="og:description" content="Veja o meu panorama político em nove eixos.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="/results.html" id="og-url-meta">
+<meta property="og:image" content="/banner.png" id="og-image-meta">
+<meta name="twitter:card" content="summary_large_image" id="twitter-card-meta">
+<meta property="twitter:domain" content="" id="twitter-domain-meta">
+<meta property="twitter:url" content="/results.html" id="twitter-url-meta">
+<meta name="twitter:title" content="Resultados - 9Eixos" id="twitter-title-meta">
+<meta name="twitter:description" content="Veja o meu panorama político em nove eixos." id="twitter-description-meta">
+<meta name="twitter:image" content="/banner.png" id="twitter-image-meta">
 <script type="application/javascript">
     version = "Versão #4.0" //Remember to update this before making changes to the test itself!
 </script>
@@ -378,6 +389,37 @@
         })
     }
 
+    function setSharePreview() {
+        var resultUrl = window.location.href
+        var baseOrigin = window.location.origin
+        var shareImageUrl = new URL("/banner.png", baseOrigin).href
+
+        var ogUrl = document.getElementById("og-url-meta")
+        var ogImage = document.getElementById("og-image-meta")
+        var twitterDomain = document.getElementById("twitter-domain-meta")
+        var twitterUrl = document.getElementById("twitter-url-meta")
+        var twitterImage = document.getElementById("twitter-image-meta")
+        if (ogUrl) { ogUrl.setAttribute("content", resultUrl) }
+        if (ogImage) { ogImage.setAttribute("content", shareImageUrl) }
+        if (twitterDomain) { twitterDomain.setAttribute("content", window.location.hostname) }
+        if (twitterUrl) { twitterUrl.setAttribute("content", resultUrl) }
+        if (twitterImage) { twitterImage.setAttribute("content", shareImageUrl) }
+
+        var shareTitle = "9Eixos: " + party + " · " + ideology
+        var shareDescription = "Partido mais próximo: " + party + " (" + partySimilarityText + ") · Ideologia: " + ideology + " (" + ideologySimilarityText + ")"
+
+        document.title = shareTitle
+
+        var ogTitle = document.querySelector('meta[property="og:title"]')
+        var ogDescription = document.querySelector('meta[property="og:description"]')
+        var twitterTitle = document.getElementById("twitter-title-meta")
+        var twitterDescription = document.getElementById("twitter-description-meta")
+        if (ogTitle) { ogTitle.setAttribute("content", shareTitle) }
+        if (ogDescription) { ogDescription.setAttribute("content", shareDescription) }
+        if (twitterTitle) { twitterTitle.setAttribute("content", shareTitle) }
+        if (twitterDescription) { twitterDescription.setAttribute("content", shareDescription) }
+    }
+
     window.onload = async function() {
         var c = document.getElementById("banner")
         var ctx = c.getContext("2d")
@@ -494,6 +536,8 @@
         ctx.font = "400 22px Montserrat"
         ctx.textAlign = "center"
         ctx.fillText("Faça o teste em 9eixos.org", 400, 1204)
+
+		setSharePreview()
 
         bannerReady = true
         document.getElementById("save-results-button").disabled = false
