@@ -749,23 +749,31 @@ body.quiz-page p.question {
     font-size: clamp(17pt, 3.2vw, 25pt);
 }
 
-.answer-strong-agree {
-    background: linear-gradient(90deg, #166534, #16a34a);
+.answer-level-3 {
+    background: linear-gradient(90deg, #14532d, #16a34a);
 }
 
-.answer-agree {
-    background: linear-gradient(90deg, #16a34a, #4ade80);
+.answer-level-2 {
+    background: linear-gradient(90deg, #3f6212, #65a30d);
 }
 
-.answer-neutral {
-    background: linear-gradient(90deg, #64748b, #94a3b8);
+.answer-level-1 {
+    background: linear-gradient(90deg, #0f766e, #14b8a6);
 }
 
-.answer-disagree {
-    background: linear-gradient(90deg, #ef4444, #f87171);
+.answer-level-0 {
+    background: linear-gradient(90deg, #475569, #64748b);
 }
 
-.answer-strong-disagree {
+.answer-level--1 {
+    background: linear-gradient(90deg, #b45309, #f59e0b);
+}
+
+.answer-level--2 {
+    background: linear-gradient(90deg, #c2410c, #f97316);
+}
+
+.answer-level--3 {
     background: linear-gradient(90deg, #991b1b, #dc2626);
 }
 
