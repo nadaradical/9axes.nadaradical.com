@@ -3,7 +3,7 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css?v=20260312c' rel='stylesheet' type='text/css'>
-<title>Político - 9Axes</title>
+<title>Político - 9Eixos</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
@@ -14,7 +14,7 @@
 <div class="results-shell politico-shell">
     <header class="results-header politico-header">
         <div class="politico-meta">
-            <p class="politico-kicker">ANÁLISE INDIVIDUAL · 9 EIXOS</p>
+            <p class="politico-kicker">Análise Individual - 9Eixos</p>
             <h1 id="politico-nome">A carregar...</h1>
             <p id="politico-partido" class="results-subtitle"></p>
             <a id="politico-ar-link" class="politico-link" href="#" target="_blank" rel="noopener noreferrer">Ver perfil na Assembleia da República</a>
@@ -221,7 +221,7 @@ function renderPolitico(data) {
         return;
     }
 
-    document.title = (data.nome || "Político") + " - 9Axes";
+    document.title = (data.nome || "Político") + " - 9Eixos";
     document.getElementById("politico-nome").textContent = data.nome || "Nome indisponível";
     document.getElementById("politico-partido").textContent = data.partido || "Partido indisponível";
 
