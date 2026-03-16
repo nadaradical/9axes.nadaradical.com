@@ -1,7 +1,7 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css?v=20260312b' rel='stylesheet' type='text/css'>
-<title>Resultados - 9Eixos</title>
+<title>Resultados - 9Axes</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
@@ -19,7 +19,7 @@
 <body class="results-page">
 <div class="results-shell">
 <header class="results-header">
-    <h1>9Eixos</h1>
+    <h1>9Axes</h1>
     <p class="results-subtitle">Seu panorama político em nove eixos</p>
 </header>
 
@@ -218,7 +218,7 @@
 
     var scores = loadValidatedScores();
     if (!scores) {
-        document.body.innerHTML = "<h1>9Eixos</h1><hr><center><h2>Link de resultados inválido ou alterado.</h2></center><br><button class=\"button\" onclick=\"location.href=\'index.html\';\" style=\"background-color: #f44336;\">Voltar</button>";
+        document.body.innerHTML = "<h1>9Axes</h1><hr><center><h2>Link de resultados inválido ou alterado.</h2></center><br><button class=\"button\" onclick=\"location.href=\'index.html\';\" style=\"background-color: #f44336;\">Voltar</button>";
         throw new Error("Invalid share payload");
     }
 
@@ -438,7 +438,7 @@
         ctx.fillStyle = "#222222"
         ctx.font = "700 64px Montserrat"
         ctx.textAlign = "left"
-        ctx.fillText("9Eixos", 20, 86)
+        ctx.fillText("9Axes", 20, 86)
         ctx.font = "400 30px Montserrat"
         ctx.fillStyle = "#455A64"
         ctx.fillText("Resultado pessoal", 22, 124)
@@ -493,7 +493,7 @@
         ctx.fillStyle = "#607D8B"
         ctx.font = "400 22px Montserrat"
         ctx.textAlign = "center"
-        ctx.fillText("Faça o teste em 9eixos.org", 400, 1204)
+        ctx.fillText("Faça o teste em 9axes.nadaradical.com", 400, 1204)
 
         bannerReady = true
         document.getElementById("save-results-button").disabled = false
