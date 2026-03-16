@@ -199,7 +199,7 @@
         if (Number.isNaN(parsed)) {
             return NaN;
         }
-        return Math.max(0, Math.min(100, parsed));
+        return Math.max(0, Math.min(100, Math.ceil(parsed)));
     }
 
     function loadValidatedScores() {
@@ -325,7 +325,7 @@
 
     function similarityFromDistance(distance) {
         var maxDistance = Math.sqrt(9 * Math.pow(100, 2))
-        var similarity = Math.round((1 - (distance / maxDistance)) * 100)
+        var similarity = Math.ceil((1 - (distance / maxDistance)) * 100)
         return Math.max(0, Math.min(100, similarity))
     }
 
