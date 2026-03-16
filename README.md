@@ -1,15 +1,15 @@
-# 9Axes (PT) — Teste de Coordenadas Políticas
+# 9Eixos (PT) — Teste de Coordenadas Políticas
 
-O **9Axes** é um teste político em português que estima o teu posicionamento ideológico em **nove eixos**.  
+O **9Eixos** é um teste político em português que estima o teu posicionamento ideológico em **nove eixos**.  
 O objetivo é simples: responder a um conjunto de afirmações e obter um retrato visual das tuas tendências políticas.
 
-🔗 **Site oficial:** [https://9axes.nadaradical.com](https://9axes.nadaradical.com)
+🔗 **Site oficial:** [https://9eixos.org](https://9eixos.org)
 
 ---
 
 ## Sobre o projeto
 
-Este repositório contém a versão web estática do 9Axes, incluindo:
+Este repositório contém a versão web estática do 9Eixos, incluindo:
 - páginas do questionário;
 - cálculo dos resultados;
 - visualização gráfica por eixo;
@@ -40,7 +40,7 @@ Cada resultado é distribuído entre dois polos opostos:
 ### Online
 
 A forma mais simples é usar a versão publicada:  
-👉 [https://9axes.nadaradical.com](https://9axes.nadaradical.com)
+👉 [https://9eixos.org](https://9eixos.org)
 
 ### Localmente
 
@@ -70,8 +70,8 @@ Depois abre: `http://localhost:8080`
 
 O site está hospedado como página estática e publicado no domínio personalizado:
 
-- **Domínio:** `9axes.nadaradical.com`
-- **URL pública:** `https://9axes.nadaradical.com`
+- **Domínio:** `9eixos.org`
+- **URL pública:** `https://9eixos.org`
 - **Configuração de domínio:** ficheiro `CNAME`
 
 ---
@@ -87,5 +87,5 @@ Para mais detalhes, consulta o ficheiro [LICENSE](LICENSE).
 ## Créditos
 
 - Baseado no projeto original **8values**.
-- Adaptação e localização para português no contexto do 9Axes.
+- Adaptação e localização para português no contexto do 9Eixos.
 
